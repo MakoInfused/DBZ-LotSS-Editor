@@ -1,4 +1,6 @@
 ﻿
+using HexTools;
+
 namespace DBZ_LotSS_Editor
 {
     public partial class Data_Skills : HexTools.HexUserControl
@@ -8,5 +10,10 @@ namespace DBZ_LotSS_Editor
             InitializeComponent();
         }
 
+        private void VisualEffects_ValueChanged(object sender, System.EventArgs e)
+        {
+            hexTextBox1.HexOffset = "&H" + HexConvert.IntToHexRaw(HexConvert.SnesToPC("1E" + VisualEffects.Text, true), 5);
+            hexTextBox1.Load();
+        }
     }
 }
