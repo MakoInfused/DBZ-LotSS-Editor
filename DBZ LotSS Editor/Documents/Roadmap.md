@@ -27,6 +27,10 @@ Meant to fix up the games balance and allow some new content to improve the over
 #### Will Do
 * Make all editor addresses configurable from definition.
 * Implement dynamic module loading to easily move addresses when user requests to add, delete or heavily modify content.
+* Implement editor features necessary to allow modifications to the Game for the Overhaul patch.
+	* Skill Effects Editing (Visual and Functional)
+	* Map Objects Editing
+	* Random Encounter Editing
 
 ### Game (Overhaul Patch)
 #### Will Do
@@ -92,8 +96,5 @@ Meant to fix up the games balance and allow some new content to improve the over
 
 ## Possible Ideas
 
-* Skill effects can be modified.
 * Item effects can be modified.
-* Objects on map can be modified.
-* Encounter rates can be modified.
 * Shops and their inventories can be modified.
