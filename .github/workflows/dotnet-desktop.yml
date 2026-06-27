@@ -58,15 +58,15 @@ jobs:
         nuget restore "${{ env.Reverse_Engineering_Path }}/${{ env.Reverse_Engineering_Solution_Name }}"
         nuget restore "${{ env.Solution_Name }}"
 
-    # Execute all unit tests in the solution
-    - name: Execute unit tests
-      run: dotnet test "${{ env.Solution_Name }}" --configuration ${{ env.Build_Configuration }}
-
     # Build the application
     - name: Build the external toolkit dependencies FIRST, then build the main app
       run: |
         msbuild "{{ env.Reverse_Engineering_Path }}/${{ env.Reverse_Engineering_Solution_Name }}" /p:Configuration=${{ env.Build_Configuration }} /p:Platform="Any CPU"
         msbuild "${{ env.Solution_Name }}" /p:Configuration=${{ env.Build_Configuration }} /p:Platform="Any CPU"
+
+    # Execute all unit tests in the solution, assumes it was built beforehand, otherwise a silent rebuild will trigger that crashes the workflow
+    - name: Execute unit tests
+      run: dotnet test "${{ env.Solution_Name }}" --configuration ${{ env.Build_Configuration }} --no-build
 
     # Extract version from AssemblyInfo.cs
     - name: Extract Version Number
@@ -95,8 +95,3 @@ jobs:
       with:
         name: DBZ-LotSS-Editor-Build-v${{ steps.get_version.outputs.APP_VERSION }}
         path: DBZ-LotSS-Editor/DBZ LotSS Editor/bin/${{ env.Build_Configuration }}/
-
-    - name: Setup Tmate Session (Interactive SSH)
-      uses: mxschmitt/action-tmate@v3
-      # Optional: Keep the session open only if a previous step failed
-      if: failure() 
