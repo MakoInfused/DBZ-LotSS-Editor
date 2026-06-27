@@ -61,7 +61,7 @@ jobs:
     # Build the application
     - name: Build the external toolkit dependencies FIRST, then build the main app
       run: |
-        msbuild "{{ env.Reverse_Engineering_Path }}/${{ env.Reverse_Engineering_Solution_Name }}" /p:Configuration=${{ env.Build_Configuration }} /p:Platform="Any CPU"
+        msbuild "${{ env.Reverse_Engineering_Path }}/${{ env.Reverse_Engineering_Solution_Name }}" /p:Configuration=${{ env.Build_Configuration }} /p:Platform="Any CPU"
         msbuild "${{ env.Solution_Name }}" /p:Configuration=${{ env.Build_Configuration }} /p:Platform="Any CPU"
 
     # Execute all unit tests in the solution, assumes it was built beforehand, otherwise a silent rebuild will trigger that crashes the workflow
