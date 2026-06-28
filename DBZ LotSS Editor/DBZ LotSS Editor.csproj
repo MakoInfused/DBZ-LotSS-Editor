@@ -1,6 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net471</TargetFramework>
+	<!-- FIXED MSB3823 -->
+	<GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
     <OutputType>WinExe</OutputType>
     <StartupObject>DBZ_LotSS_Editor.My.MyApplication</StartupObject>
     <RootNamespace>DBZ_LotSS_Editor</RootNamespace>

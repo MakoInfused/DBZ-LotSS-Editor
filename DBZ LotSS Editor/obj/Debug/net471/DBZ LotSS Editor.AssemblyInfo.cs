@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute("An all purpose Editor for the SNES Game Dragonball Z: Legend of the Super Saiyan." +
     " Built using C# and .NET framework.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.78.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.78.0+89b452327e83fd7c798ec4f6f0bd8c8b2611374c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.78.0+e4276319d4973d1ab4740d9b5617c70f44f8580b")]
 [assembly: System.Reflection.AssemblyProductAttribute("DragonBall Z: Legend of the Super Saiyan Editor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DBZ LotSS Editor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.78.0")]
