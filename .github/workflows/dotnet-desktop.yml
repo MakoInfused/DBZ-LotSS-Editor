@@ -31,7 +31,7 @@ jobs:
 
     defaults:
       run:
-        shell: powershell -ExecutionPolicy Bypass
+        shell: powershell
 
     env:
       Solution_Name: "DBZ LotSS Editor.sln"
