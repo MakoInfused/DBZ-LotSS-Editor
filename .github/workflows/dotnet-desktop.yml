@@ -76,7 +76,7 @@ jobs:
       id: get_version
       shell: pwsh
       run: |
-        $dllPath = "./publish/DBZ LotSS Editor.dll"
+        $dllPath = "./publish/DBZ LotSS Editor.exe"
         if (Test-Path $dllPath) {
             $version = (Get-Item $dllPath).VersionInfo.ProductVersion.Trim()
             echo "App_Version=$version" >> $env:GITHUB_ENV
