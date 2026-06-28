@@ -44,7 +44,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         repository: 'MakoInfused/Reverse-Engineering-Toolkit'
-        ref: 'master'
+        ref: 'main'
         path: 'temp-toolkit' # <- Stays within the safe workspace directory boundary
 
     # 3. Link Step: Use PowerShell to safely project the folder "up and out" exactly where our ..\..\ relative path looks for it
