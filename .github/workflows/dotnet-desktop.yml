@@ -39,13 +39,24 @@ jobs:
     - name: Checkout Main Repository Code
       uses: actions/checkout@v4
 
-    # 2. Download the toolkit exactly where your ..\..\ relative path looks for it
+    # 2. Download the toolkit in a temp folder
     - name: Checkout Reverse-Engineering-Toolkit Natively
       uses: actions/checkout@v4
       with:
         repository: 'MakoInfused/Reverse-Engineering-Toolkit'
         ref: 'main'
-        path: '../Reverse-Engineering-Toolkit'
+        path: 'temp-toolkit' # <- Stays within the safe workspace directory boundary
+
+    # 3. Link Step: Use PowerShell to safely project the folder "up and out" exactly where our ..\..\ relative path looks for it
+    - name: Link Toolkit to Parent Directory
+      run: |
+        # Resolve fully qualified absolute paths to satisfy the Windows Junction engine
+        $targetPath = Resolve-Path "temp-toolkit"
+        $parentFolder = Split-Path $env:GITHUB_WORKSPACE -Parent
+        $junctionPath = Join-Path $parentFolder "Reverse-Engineering-Toolkit"
+
+        Write-Host "Creating junction link from $junctionPath to $targetPath"
+        New-Item -ItemType Junction -Path $junctionPath -Value $targetPath
 
     # Modern .NET core tooling required to process SDK-style projects natively
     - name: Setup .NET SDK
