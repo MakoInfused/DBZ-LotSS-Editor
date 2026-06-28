@@ -50,8 +50,13 @@ jobs:
     # 3. Link Step: Use PowerShell to safely project the folder "up and out" exactly where our ..\..\ relative path looks for it
     - name: Link Toolkit to Parent Directory
       run: |
-        # Creates a native folder connection up one level so your ..\..\ condition is fully satisfied
-        New-Item -ItemType Junction -Path "../Reverse-Engineering-Toolkit" -Value "temp-toolkit"
+        # Resolve fully qualified absolute paths to satisfy the Windows Junction engine
+        $targetPath = Resolve-Path "temp-toolkit"
+        $parentFolder = Split-Path $env:GITHUB_WORKSPACE -Parent
+        $junctionPath = Join-Path $parentFolder "Reverse-Engineering-Toolkit"
+
+        Write-Host "Creating junction link from $junctionPath to $targetPath"
+        New-Item -ItemType Junction -Path $junctionPath -Value $targetPath
 
     # Modern .NET core tooling required to process SDK-style projects natively
     - name: Setup .NET SDK
