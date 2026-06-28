@@ -18,7 +18,8 @@ namespace DBZ_LotSS_Editor
             Title.Text = Info.ProductName;
             Company.Text = Info.CompanyName;
             Author.Text = Info.Trademark;
-            Version.Text = Info.Version.ToString();
+            // We will display the full product version, including the git commit hash, here.
+            Version.Text = Application.ProductVersion.ToString();
             Copyright.Text = Info.Copyright;
             Description.Text = Info.Description;
         }

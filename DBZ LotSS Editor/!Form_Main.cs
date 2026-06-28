@@ -1,4 +1,10 @@
-﻿using System;
+﻿using BasicTools;
+using BasicTools.BasicControls;
+using HexTools;
+using HexTools.HexStructures;
+using Microsoft.VisualBasic;
+using Microsoft.VisualBasic.CompilerServices;
+using System;
 using System.Collections;
 using System.ComponentModel;
 using System.Data;
@@ -8,13 +14,6 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
-using System.Windows.Media;
-using BasicTools;
-using BasicTools.BasicControls;
-using HexTools;
-using HexTools.HexStructures;
-using Microsoft.VisualBasic;
-using Microsoft.VisualBasic.CompilerServices;
 
 // Replace Powerpacks dependancy with GDI components:
 // http://www.codeproject.com/Articles/27228/A-class-for-creating-round-rectangles-in-GDI-with
@@ -27,9 +26,6 @@ using Microsoft.VisualBasic.CompilerServices;
 // Create AutoPatch Method
 // Patch PC Pointers
 // TableView Column Sorts are bugged
-
-// Attribute fixes a bug where the whole application resizes when a WPF form is used
-[assembly: DisableDpiAwareness]
 
 namespace DBZ_LotSS_Editor
 {
@@ -59,7 +55,8 @@ namespace DBZ_LotSS_Editor
         public override string Text
         {
             get => base.Text;
-            set => base.Text = value.Replace("{version}", Application.ProductVersion);
+            // We'll remove the git hash commit in the version for the UI.
+            set => base.Text = value.Replace("{version}", Application.ProductVersion.Split('+')[0]);
         }
 
         private SystemKeyboardEvent SystemKeyboardHandler = new SystemKeyboardEvent();

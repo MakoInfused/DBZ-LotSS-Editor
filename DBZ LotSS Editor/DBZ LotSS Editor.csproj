@@ -1,18 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1BE45E64-BC51-0C2A-1652-08C60071F526}</ProjectGuid>
+    <TargetFramework>net471</TargetFramework>
     <OutputType>WinExe</OutputType>
     <StartupObject>DBZ_LotSS_Editor.My.MyApplication</StartupObject>
     <RootNamespace>DBZ_LotSS_Editor</RootNamespace>
-    <AssemblyName>DBZ LotSS Editor</AssemblyName>
-    <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
-    <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -30,24 +22,30 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <DefaultItemExcludes>$(DefaultItemExcludes);$(ProjectDir)**\*.vb</DefaultItemExcludes>
     <LangVersion>latest</LangVersion>
+    <UseWindowsForms>true</UseWindowsForms>
+	<EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+	<!-- Assembly Metadata -->
+	<Title>DBZ LotSS Editor</Title>
+	<Description>An all purpose Editor for the SNES Game Dragonball Z: Legend of the Super Saiyan. Built using C# and .NET framework.</Description>
+	<Company>Cetra Games</Company>
+	<Product>DragonBall Z: Legend of the Super Saiyan Editor</Product>
+	<Copyright>Copyright © 2014 by Cetra Games</Copyright>
+	<!-- Versioning -->
+	<Version>0.78.0</Version>
+	<AssemblyVersion>0.78.0</AssemblyVersion>
+	<FileVersion>0.78.0</FileVersion>
+	<!-- COM and Interop Settings -->
+	<ComVisible>false</ComVisible>
+	<Guid>ecd18392-9589-413a-8747-aa12ee3f6924</Guid>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>pdbonly</DebugType>
-    <OutputPath>bin\Debug\</OutputPath>
     <DocumentationFile>bin\Debug\DBZ LotSS Editor.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
-    <DefineConstants>TRACE;DEBUG</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
     <DocumentationFile>bin\Release\DBZ LotSS Editor.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
-    <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <PropertyGroup>
     <OptionExplicit>On</OptionExplicit>
@@ -71,15 +69,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
     <Reference Include="System.Design" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="WindowsBase" />
   </ItemGroup>
@@ -97,524 +87,145 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="!Form_ToolGraphic.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="!Form_ToolGraphic.Designer.cs">
-      <DependentUpon>!Form_ToolGraphic.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AppDefinition.cs" />
-    <Compile Include="Data_Skills.cs">
+    <Compile Update="Data_Skills.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Data_Skills.Designer.cs">
-      <DependentUpon>Data_Skills.cs</DependentUpon>
-    </Compile>
-    <Compile Include="My Project\MyNamespace.Dynamic.Designer.cs" />
-    <Compile Include="My Project\MyNamespace.Static.1.Designer.cs" />
-    <Compile Include="My Project\MyNamespace.Static.2.Designer.cs" />
-    <Compile Include="My Project\MyNamespace.Static.3.Designer.cs" />
-    <Compile Include="!Form_EditorPalette.Designer.cs">
-      <DependentUpon>!Form_EditorPalette.cs</DependentUpon>
-    </Compile>
-    <Compile Include="!Form_EditorPalette.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="!Form_ToolData.Designer.cs">
-      <DependentUpon>!Form_ToolData.cs</DependentUpon>
-    </Compile>
-    <Compile Include="!Form_ToolData.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="!Form_ToolHistory.Designer.cs">
-      <DependentUpon>!Form_ToolHistory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="!Form_ToolHistory.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="!Form_OptionsPreferences.Designer.cs">
-      <DependentUpon>!Form_OptionsPreferences.cs</DependentUpon>
-    </Compile>
-    <Compile Include="!Form_OptionsPreferences.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="!Form_HelpAbout.Designer.cs">
-      <DependentUpon>!Form_HelpAbout.cs</DependentUpon>
-    </Compile>
-    <Compile Include="!Form_HelpAbout.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="!Form_ToolFont.Designer.cs">
-      <DependentUpon>!Form_ToolFont.cs</DependentUpon>
-    </Compile>
-    <Compile Include="!Form_ToolFont.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="!Form_EditorText.Designer.cs">
-      <DependentUpon>!Form_EditorText.cs</DependentUpon>
-    </Compile>
-    <Compile Include="!Form_EditorText.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="!Form_EditorSprite.Designer.cs">
-      <DependentUpon>!Form_EditorSprite.cs</DependentUpon>
-    </Compile>
-    <Compile Include="!Form_EditorSprite.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="!Form_EditorDatabase.Designer.cs">
-      <DependentUpon>!Form_EditorDatabase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="!Form_EditorDatabase.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Data_Global.Designer.cs">
-      <DependentUpon>Data_Global.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Data_Global.cs">
+    <Compile Update="Data_Global.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Data_Groups.Designer.cs">
-      <DependentUpon>Data_Groups.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Data_Groups.cs">
+    <Compile Update="Data_Groups.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Palette_System.cs">
+    <Compile Update="Palette_System.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Palette_System.Designer.cs">
-      <DependentUpon>Palette_System.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Palette_Characters.Designer.cs">
-      <DependentUpon>Palette_Characters.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Palette_Characters.cs">
+    <Compile Update="Palette_Characters.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Palette_Flyers.Designer.cs">
-      <DependentUpon>Palette_Flyers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Palette_Flyers.cs">
+    <Compile Update="Palette_Flyers.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Settings.Designer.cs">
-      <DependentUpon>Settings.settings</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <Compile Include="Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Settings.cs" />
-    <Compile Include="Sprite_Flyers.cs">
+    <Compile Update="Sprite_Flyers.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Sprite_Flyers.Designer.cs">
-      <DependentUpon>Sprite_Flyers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Sprite_System.cs">
+    <Compile Update="Sprite_System.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Sprite_System.Designer.cs">
-      <DependentUpon>Sprite_System.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Sprite_Characters.cs">
+    <Compile Update="Sprite_Characters.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Sprite_Characters.Designer.cs">
-      <DependentUpon>Sprite_Characters.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Sprite_Control.cs">
+    <Compile Update="Sprite_Control.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Text_Descriptions.cs">
+    <Compile Update="Text_Descriptions.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Text_Descriptions.Designer.cs">
-      <DependentUpon>Text_Descriptions.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Text_Skills.Designer.cs">
-      <DependentUpon>Text_Skills.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Text_Skills.cs">
+    <Compile Update="Text_Skills.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Text_Items.Designer.cs">
-      <DependentUpon>Text_Items.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Text_Items.cs">
+    <Compile Update="Text_Items.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Text_Characters.Designer.cs">
-      <DependentUpon>Text_Characters.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Text_Characters.cs">
+    <Compile Update="Text_Characters.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Text_Battlers.Designer.cs">
-      <DependentUpon>Text_Battlers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Text_Battlers.cs">
+    <Compile Update="Text_Battlers.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Text_Dialogues.Designer.cs">
-      <DependentUpon>Text_Dialogues.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Text_Dialogues.cs">
+    <Compile Update="Text_Dialogues.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Data_Items.Designer.cs">
-      <DependentUpon>Data_Items.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Data_Items.cs">
+    <Compile Update="Data_Items.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Data_Maps.Designer.cs">
-      <DependentUpon>Data_Maps.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Data_Maps.cs">
+    <Compile Update="Data_Maps.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Data_Dialogues.Designer.cs">
-      <DependentUpon>Data_Dialogues.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Data_Dialogues.cs">
+    <Compile Update="Data_Dialogues.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Data_Characters.Designer.cs">
-      <DependentUpon>Data_Characters.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Data_Characters.cs">
+    <Compile Update="Data_Characters.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="!Form_Main.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="!Form_Main.Designer.cs">
-      <DependentUpon>!Form_Main.cs</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Module1.cs" />
-    <Compile Include="Sprite_Portrait.Designer.cs">
-      <DependentUpon>Sprite_Portrait.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Sprite_Portrait.cs">
+    <Compile Update="Sprite_Portrait.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Palette_Portrait.Designer.cs">
-      <DependentUpon>Palette_Portrait.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Palette_Portrait.cs">
+    <Compile Update="Palette_Portrait.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Palette_Battlers.Designer.cs">
-      <DependentUpon>Palette_Battlers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Palette_Battlers.cs">
+    <Compile Update="Palette_Battlers.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Sprite_Battlers.Designer.cs">
-      <DependentUpon>Sprite_Battlers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Sprite_Battlers.cs">
+    <Compile Update="Sprite_Battlers.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="My Project\Application.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Application.myapp</DependentUpon>
-    </Compile>
-    <Compile Include="Data_Battlers.Designer.cs">
-      <DependentUpon>Data_Battlers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Data_Battlers.cs">
+    <Compile Update="Data_Battlers.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="!Form_EditorPalette.resx">
-      <DependentUpon>!Form_EditorPalette.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="!Form_ToolGraphic.resx">
-      <DependentUpon>!Form_ToolGraphic.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="!Form_ToolData.resx">
-      <DependentUpon>!Form_ToolData.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="!Form_ToolHistory.resx">
-      <DependentUpon>!Form_ToolHistory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="!Form_OptionsPreferences.resx">
-      <DependentUpon>!Form_OptionsPreferences.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="!Form_HelpAbout.resx">
-      <DependentUpon>!Form_HelpAbout.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="!Form_ToolFont.resx">
-      <DependentUpon>!Form_ToolFont.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="!Form_EditorText.resx">
-      <DependentUpon>!Form_EditorText.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="!Form_EditorSprite.resx">
-      <DependentUpon>!Form_EditorSprite.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="!Form_EditorDatabase.resx">
-      <DependentUpon>!Form_EditorDatabase.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Data_Global.resx">
-      <DependentUpon>Data_Global.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Data_Groups.resx">
-      <DependentUpon>Data_Groups.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Data_Skills.resx">
-      <DependentUpon>Data_Skills.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Palette_System.resx">
-      <DependentUpon>Palette_System.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Palette_Characters.resx">
-      <DependentUpon>Palette_Characters.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Palette_Flyers.resx">
-      <DependentUpon>Palette_Flyers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Sprite_Flyers.resx">
-      <DependentUpon>Sprite_Flyers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Sprite_System.resx">
-      <DependentUpon>Sprite_System.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Sprite_Characters.resx">
-      <DependentUpon>Sprite_Characters.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Text_Descriptions.resx">
-      <DependentUpon>Text_Descriptions.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Text_Skills.resx">
-      <DependentUpon>Text_Skills.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Text_Items.resx">
-      <DependentUpon>Text_Items.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Text_Characters.resx">
-      <DependentUpon>Text_Characters.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Text_Battlers.resx">
-      <DependentUpon>Text_Battlers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Text_Dialogues.resx">
-      <DependentUpon>Text_Dialogues.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Data_Items.resx">
-      <DependentUpon>Data_Items.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Data_Maps.resx">
-      <DependentUpon>Data_Maps.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Data_Dialogues.resx">
-      <DependentUpon>Data_Dialogues.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Data_Characters.resx">
-      <DependentUpon>Data_Characters.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="!Form_Main.resx">
-      <DependentUpon>!Form_Main.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Sprite_Portrait.resx">
-      <DependentUpon>Sprite_Portrait.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Palette_Portrait.resx">
-      <DependentUpon>Palette_Portrait.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Palette_Battlers.resx">
-      <DependentUpon>Palette_Battlers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Sprite_Battlers.resx">
-      <DependentUpon>Sprite_Battlers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <CustomToolNamespace>DBZ_LotSS_Editor.My.Resources</CustomToolNamespace>
-      <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Data_Battlers.resx">
-      <DependentUpon>Data_Battlers.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Documents\Roadmap.md" />
-    <None Include="My Project\app.manifest" />
-    <None Include="My Project\Application.myapp">
+    <None Update="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.cs</LastGenOutput>
     </None>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\DataSources\DBZ_LotSS_Editor.My.Settings.datasource" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-      <CustomToolNamespace>DBZ_LotSS_Editor.My</CustomToolNamespace>
-    </None>
-    <None Include="Resources\Add.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\PaletteEditor_System.json">
+    <None Update="Resources\PaletteEditor_System.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\SpriteEditor_Flyers.json">
+    <None Update="Resources\SpriteEditor_Flyers.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\SpriteEditor_System.json">
+    <None Update="Resources\SpriteEditor_System.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\SpriteEditor_Characters.json">
+    <None Update="Resources\SpriteEditor_Characters.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\SpriteEditor_Battlers.json">
+    <None Update="Resources\SpriteEditor_Battlers.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\DataEditor_Characters.json">
+    <None Update="Resources\DataEditor_Characters.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\TextEditor_Dialogues.json">
+    <None Update="Resources\TextEditor_Dialogues.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\TextEditor_Descriptions.json">
+    <None Update="Resources\TextEditor_Descriptions.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\TextEditor_Items.json">
+    <None Update="Resources\TextEditor_Items.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\TextEditor_Characters.json">
+    <None Update="Resources\TextEditor_Characters.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\TextEditor_Battlers.json">
+    <None Update="Resources\TextEditor_Battlers.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\PaletteEditor_Flyers.json">
+    <None Update="Resources\PaletteEditor_Flyers.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\PaletteEditor_Battlers.json">
+    <None Update="Resources\PaletteEditor_Battlers.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\PaletteEditor_Characters.json">
+    <None Update="Resources\PaletteEditor_Characters.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\PaletteEditor_Portraits.json">
+    <None Update="Resources\PaletteEditor_Portraits.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\FontTable.tbl">
+    <None Update="Resources\FontTable.tbl">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\DefaultTable.tbl" />
-    <None Include="Resources\Reload.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Remove.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Import.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Export.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\DBZ LotSS Icon.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Copy.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Cut.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Open.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Paste.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Save.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\close32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\saveas32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SpriteEditor_Portraits.json">
+    <None Update="Resources\SpriteEditor_Portraits.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\TextEditor_Skills.json">
+    <None Update="Resources\TextEditor_Skills.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\undo16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\redo16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\select16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\exit16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\prepare32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fill16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\styleset16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\printpreview32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\multilevellist16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\publish32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\options16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\addons32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fontcolor16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\orderedlist16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\goto16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Musical32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\newdocument32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sort16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\find32.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.1">
@@ -631,26 +242,33 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Reverse-Engineering-Toolkit\BasicTools\BasicTools.csproj">
-      <Project>{6b60abd6-dad9-01fc-0980-fb0980845278}</Project>
-      <Name>BasicTools</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Reverse-Engineering-Toolkit\HexTools\HexTools.csproj">
-      <Project>{4281a4b5-2a71-0fdd-0aec-6a60a56a81e5}</Project>
-      <Name>HexTools</Name>
-    </ProjectReference>
-  </ItemGroup>
+	<ItemGroup>
+		<!-- 1. Local Development Mode: Used on your PC where the folder exists -->
+		<ProjectReference
+			Include="..\..\Reverse-Engineering-Toolkit\BasicTools\BasicTools.csproj"
+			Condition="Exists('..\..\Reverse-Engineering-Toolkit\BasicTools\BasicTools.csproj')" />
+		<ProjectReference
+			Include="..\..\Reverse-Engineering-Toolkit\HexTools\HexTools.csproj"
+			Condition="Exists('..\..\Reverse-Engineering-Toolkit\HexTools\HexTools.csproj')" />
+
+		<!-- 2. Cloud Server Build Mode: Used on GitHub where the toolkit folder is absent -->
+		<PackageReference
+			Include="ReverseEngineeringToolkit.BasicTools"
+			Version="0.8.0.0"
+			Condition="!Exists('..\..\Reverse-Engineering-Toolkit\BasicTools\BasicTools.csproj')" />
+		<PackageReference
+			Include="ReverseEngineeringToolkit.HexTools"
+			Version="0.8.0.0"
+			Condition="!Exists('..\..\Reverse-Engineering-Toolkit\HexTools\HexTools.csproj')" />
+	</ItemGroup>
   <ItemGroup>
     <Content Include="Documents\Notes.txt" />
     <Content Include="Documents\Offsets.txt" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+  <ItemGroup>
+	  <!-- Explicitly forces the compiler to build the missing Trademark attribute -->
+	  <AssemblyAttribute Include="System.Reflection.AssemblyTrademarkAttribute">
+	    <_Parameter1>MakoInfused / Dino Suvalic</_Parameter1>
+	  </AssemblyAttribute>
+  </ItemGroup>
 </Project>
