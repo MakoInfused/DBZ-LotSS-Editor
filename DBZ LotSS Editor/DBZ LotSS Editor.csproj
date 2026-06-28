@@ -198,6 +198,7 @@
     <Compile Include="Palette_Flyers.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <DependentUpon>Settings.settings</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -322,7 +323,6 @@
     <Compile Include="Sprite_Battlers.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="My Project\AssemblyInfo.cs" />
     <Compile Include="My Project\Application.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
