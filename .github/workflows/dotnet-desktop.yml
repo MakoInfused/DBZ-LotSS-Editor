@@ -15,6 +15,7 @@ name: .NET Framework Desktop
 on:
   push:
     branches: [ "master" ]
+    tags: [ "v*" ] # <- Triggers the workflow specifically when a version tag is pushed
   pull_request:
     branches: [ "master" ]
 
@@ -90,3 +91,24 @@ jobs:
       with:
         name: DBZ-LotSS-Editor-Build-v${{ env.App_Version }}
         path: ./publish/
+
+    # When tagged: Automatically Zip the publish directory explicitly for the release attachment
+    - name: Zip Release Folder
+      if: startsWith(github.ref, 'refs/tags/') # <- Runs ONLY when pushing a tag
+      shell: pwsh
+      run: |
+        Compress-Archive -Path ./publish/* -DestinationPath ./DBZ-LotSS-Editor-Build-v${{ env.APP_VERSION }}.zip
+
+    # When tagged: Create the GitHub Release and upload the standalone zip
+    - name: Create GitHub Release
+      if: startsWith(github.ref, 'refs/tags/') # <- Runs ONLY when pushing a tag
+      uses: softprops/action-gh-release@v2
+      with:
+        # Attaches the newly compressed archive package permanently to the release page
+        files: ./DBZ-LotSS-Editor-Build-v${{ env.APP_VERSION }}.zip
+        # Generates clean automated release notes based on your git commit messages
+        generate_release_notes: true
+        # Sets the release as a Draft so you can review it before making it public
+        draft: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # <- Automated token provided by GitHub natively
