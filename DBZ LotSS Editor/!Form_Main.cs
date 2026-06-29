@@ -138,6 +138,17 @@ namespace DBZ_LotSS_Editor
 
         public Form_Main()
         {
+            AppDomain.CurrentDomain.AssemblyResolve += (sender, args) =>
+            {
+                // Intercept the hardcoded broken 4.0.0.0 reference check
+                if (args.Name.StartsWith("System.Resources.Extensions, Version=4.0.0.0"))
+                {
+                    // Dynamically load the modern version that was copied into your publish folder
+                    return System.Reflection.Assembly.Load("System.Resources.Extensions, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51");
+                }
+                return null;
+            };
+
             InitializeComponent();
         }
 
