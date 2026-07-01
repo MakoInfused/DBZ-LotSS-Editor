@@ -249,7 +249,7 @@ namespace DBZ_LotSS_Editor
             this.BasicListBoxAssociate1.Margin = new System.Windows.Forms.Padding(6);
             this.BasicListBoxAssociate1.Name = "BasicListBoxAssociate1";
             this.BasicListBoxAssociate1.Padding = new System.Windows.Forms.Padding(6);
-            this.BasicListBoxAssociate1.Size = new System.Drawing.Size(738, 894);
+            this.BasicListBoxAssociate1.Size = new System.Drawing.Size(736, 894);
             this.BasicListBoxAssociate1.TabIndex = 17;
             this.BasicListBoxAssociate1.TabStop = false;
             this.BasicListBoxAssociate1.Text = "HexListBox1";

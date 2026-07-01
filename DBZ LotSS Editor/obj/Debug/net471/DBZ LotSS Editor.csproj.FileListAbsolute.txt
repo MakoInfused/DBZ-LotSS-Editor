@@ -105,3 +105,4 @@ C:\Users\MakoInfused\Source\Repos\DBZ-LotSS-Editor\DBZ LotSS Editor\obj\Debug\ne
 C:\Users\MakoInfused\Source\Repos\DBZ-LotSS-Editor\DBZ LotSS Editor\obj\Debug\net471\DBZ LotS.9C222B4D.Up2Date
 C:\Users\MakoInfused\Source\Repos\DBZ-LotSS-Editor\DBZ LotSS Editor\obj\Debug\net471\DBZ LotSS Editor.exe
 C:\Users\MakoInfused\Source\Repos\DBZ-LotSS-Editor\DBZ LotSS Editor\obj\Debug\net471\DBZ LotSS Editor.pdb
+C:\Users\MakoInfused\Source\Repos\DBZ-LotSS-Editor\DBZ LotSS Editor\obj\Debug\net471\DBZ_LotSS_Editor.Data_Shops.resources

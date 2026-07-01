@@ -150,6 +150,12 @@ namespace DBZ_LotSS_Editor
             };
 
             InitializeComponent();
+
+            // Lower the minimum size threshold first so it doesn't block the resize
+            MinimumSize = new Size(MinimumSize.Width, MinimumSize.Height - 40);
+
+            // Shrink the actual window height by 40 pixels, so we can see the progress bar
+            Height -= 40;
         }
 
         private void Form_Main_FormClosing(object sender, FormClosingEventArgs e)

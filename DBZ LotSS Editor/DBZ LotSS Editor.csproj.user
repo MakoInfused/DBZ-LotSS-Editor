@@ -37,5 +37,8 @@
     <Compile Update="!Form_ToolHistory.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Data_Shops.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

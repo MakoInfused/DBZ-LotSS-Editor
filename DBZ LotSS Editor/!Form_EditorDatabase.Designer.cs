@@ -48,6 +48,9 @@ namespace DBZ_LotSS_Editor
             this.TabItems = new BasicTools.BasicControls.BasicTabPage();
             this.PanelItems = new HexTools.HexPanel();
             this.Database_Items = new DBZ_LotSS_Editor.Data_Items();
+            this.TabShops = new BasicTools.BasicControls.BasicTabPage();
+            this.PanelShops = new HexTools.HexPanel();
+            this.Database_Shops = new DBZ_LotSS_Editor.Data_Shops();
             this.TabGroups = new BasicTools.BasicControls.BasicTabPage();
             this.PanelGroups = new HexTools.HexPanel();
             this.Database_Groups = new DBZ_LotSS_Editor.Data_Groups();
@@ -67,6 +70,8 @@ namespace DBZ_LotSS_Editor
             this.PanelSkills.SuspendLayout();
             this.TabItems.SuspendLayout();
             this.PanelItems.SuspendLayout();
+            this.TabShops.SuspendLayout();
+            this.PanelShops.SuspendLayout();
             this.TabGroups.SuspendLayout();
             this.PanelGroups.SuspendLayout();
             this.TabMaps.SuspendLayout();
@@ -80,6 +85,7 @@ namespace DBZ_LotSS_Editor
             this.TabControl1.Controls.Add(this.TabBattlers);
             this.TabControl1.Controls.Add(this.TabSkills);
             this.TabControl1.Controls.Add(this.TabItems);
+            this.TabControl1.Controls.Add(this.TabShops);
             this.TabControl1.Controls.Add(this.TabDialogues);
             this.TabControl1.Controls.Add(this.TabGroups);
             this.TabControl1.Controls.Add(this.TabMaps);
@@ -225,6 +231,39 @@ namespace DBZ_LotSS_Editor
             this.Database_Items.Size = new System.Drawing.Size(1388, 1086);
             this.Database_Items.TabIndex = 0;
             // 
+            // TabShops
+            // 
+            this.TabShops.BackColor = System.Drawing.SystemColors.Control;
+            this.TabShops.Controls.Add(this.PanelShops);
+            this.TabShops.Location = new System.Drawing.Point(4, 31);
+            this.TabShops.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.TabShops.Name = "TabShops";
+            this.TabShops.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.TabShops.Size = new System.Drawing.Size(1400, 1098);
+            this.TabShops.TabIndex = 4;
+            this.TabShops.Text = "Shops";
+            // 
+            // PanelShops
+            // 
+            this.PanelShops.Controls.Add(this.Database_Shops);
+            this.PanelShops.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelShops.HexOffset = "0";
+            this.PanelShops.Location = new System.Drawing.Point(6, 6);
+            this.PanelShops.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.PanelShops.Name = "PanelShops";
+            this.PanelShops.Size = new System.Drawing.Size(1388, 1086);
+            this.PanelShops.TabIndex = 4;
+            // 
+            // Database_Shops
+            // 
+            this.Database_Shops.AutoScroll = true;
+            this.Database_Shops.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Database_Shops.Location = new System.Drawing.Point(0, 0);
+            this.Database_Shops.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.Database_Shops.Name = "Database_Shops";
+            this.Database_Shops.Size = new System.Drawing.Size(1388, 1086);
+            this.Database_Shops.TabIndex = 0;
+            // 
             // TabGroups
             // 
             this.TabGroups.BackColor = System.Drawing.SystemColors.Control;
@@ -352,6 +391,8 @@ namespace DBZ_LotSS_Editor
             this.PanelSkills.ResumeLayout(false);
             this.TabItems.ResumeLayout(false);
             this.PanelItems.ResumeLayout(false);
+            this.TabShops.ResumeLayout(false);
+            this.PanelShops.ResumeLayout(false);
             this.TabGroups.ResumeLayout(false);
             this.PanelGroups.ResumeLayout(false);
             this.TabMaps.ResumeLayout(false);
@@ -376,6 +417,9 @@ namespace DBZ_LotSS_Editor
         internal BasicTabPage TabItems;
         internal HexTools.HexPanel PanelItems;
         internal Data_Items Database_Items;
+        internal BasicTabPage TabShops;
+        internal HexTools.HexPanel PanelShops;
+        internal Data_Shops Database_Shops;
         internal BasicTabPage TabMaps;
         internal HexTools.HexPanel PanelMaps;
         internal Data_Maps Database_Maps;

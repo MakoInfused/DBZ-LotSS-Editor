@@ -86,6 +86,11 @@ namespace DBZ_LotSS_Editor
             HexTools.HexListBoxItem hexListBoxItem93 = new HexTools.HexListBoxItem();
             HexTools.HexListBoxItem hexListBoxItem94 = new HexTools.HexListBoxItem();
             this.BasicListBoxAssociate1 = new BasicTools.BasicControls.BasicListBoxAssociate();
+            this.hexTextBox1 = new HexTools.HexTextBox();
+            this.hexPanel5 = new HexTools.HexPanel();
+            this.ExperimentScriptData = new BasicTools.BasicExperimentalControl();
+            this.ScriptEffects = new HexTools.HexNumericBox();
+            this.LabelScriptEffects = new System.Windows.Forms.Label();
             this.DescriptionPanel = new HexTools.HexPanel();
             this.DescriptionBox = new HexTools.HexComboBox();
             this.LabelDescription = new System.Windows.Forms.Label();
@@ -95,10 +100,6 @@ namespace DBZ_LotSS_Editor
             this.HexPanel7 = new HexTools.HexPanel();
             this.Label13 = new System.Windows.Forms.Label();
             this.PortraitSpriteIndex = new HexTools.HexBitFlag();
-            this.HexPanel4 = new HexTools.HexPanel();
-            this.ExperimentUseScript = new BasicTools.BasicExperimentalControl();
-            this.UseScript = new HexTools.HexTextBox();
-            this.Label5 = new System.Windows.Forms.Label();
             this.HexPanel3 = new HexTools.HexPanel();
             this.PortraitPalette = new HexTools.HexComboBox();
             this.Label4 = new System.Windows.Forms.Label();
@@ -113,10 +114,11 @@ namespace DBZ_LotSS_Editor
             this.Label1 = new System.Windows.Forms.Label();
             this.HexListBox1 = new HexTools.HexListBox();
             this.BasicListBoxAssociate1.SuspendLayout();
+            this.hexPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ScriptEffects)).BeginInit();
             this.DescriptionPanel.SuspendLayout();
             this.NamePanel.SuspendLayout();
             this.HexPanel7.SuspendLayout();
-            this.HexPanel4.SuspendLayout();
             this.HexPanel3.SuspendLayout();
             this.HexPanel2.SuspendLayout();
             this.HexPanel1.SuspendLayout();
@@ -125,10 +127,11 @@ namespace DBZ_LotSS_Editor
             // 
             // BasicListBoxAssociate1
             // 
+            this.BasicListBoxAssociate1.Controls.Add(this.hexTextBox1);
+            this.BasicListBoxAssociate1.Controls.Add(this.hexPanel5);
             this.BasicListBoxAssociate1.Controls.Add(this.DescriptionPanel);
             this.BasicListBoxAssociate1.Controls.Add(this.NamePanel);
             this.BasicListBoxAssociate1.Controls.Add(this.HexPanel7);
-            this.BasicListBoxAssociate1.Controls.Add(this.HexPanel4);
             this.BasicListBoxAssociate1.Controls.Add(this.HexPanel3);
             this.BasicListBoxAssociate1.Controls.Add(this.HexPanel2);
             this.BasicListBoxAssociate1.Controls.Add(this.HexPanel1);
@@ -141,6 +144,72 @@ namespace DBZ_LotSS_Editor
             this.BasicListBoxAssociate1.TabIndex = 15;
             this.BasicListBoxAssociate1.TabStop = false;
             this.BasicListBoxAssociate1.Text = "HexListBox1";
+            // 
+            // hexTextBox1
+            // 
+            this.hexTextBox1.ClosingTag = "AD3C";
+            this.hexTextBox1.ClosingTagIsEnd = true;
+            this.hexTextBox1.Display = HexTools.HexEnumerations.DisplayType.Hex;
+            this.hexTextBox1.Input = HexTools.HexEnumerations.InputType.Hex;
+            this.hexTextBox1.Location = new System.Drawing.Point(14, 661);
+            this.hexTextBox1.MaxLengthLabel = true;
+            this.hexTextBox1.Multiline = true;
+            this.hexTextBox1.Name = "hexTextBox1";
+            this.hexTextBox1.OvertypeMode = true;
+            this.hexTextBox1.Size = new System.Drawing.Size(403, 200);
+            this.hexTextBox1.TabIndex = 55;
+            // 
+            // hexPanel5
+            // 
+            this.hexPanel5.Controls.Add(this.ExperimentScriptData);
+            this.hexPanel5.Controls.Add(this.ScriptEffects);
+            this.hexPanel5.Controls.Add(this.LabelScriptEffects);
+            this.hexPanel5.IndexOffset = "&H000002";
+            this.hexPanel5.Location = new System.Drawing.Point(14, 607);
+            this.hexPanel5.Margin = new System.Windows.Forms.Padding(6);
+            this.hexPanel5.Name = "hexPanel5";
+            this.hexPanel5.Size = new System.Drawing.Size(712, 45);
+            this.hexPanel5.TabIndex = 54;
+            // 
+            // ExperimentScriptData
+            // 
+            this.ExperimentScriptData.Control = this.hexTextBox1;
+            this.ExperimentScriptData.Location = new System.Drawing.Point(204, 1);
+            this.ExperimentScriptData.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.ExperimentScriptData.Name = "ExperimentScriptData";
+            this.ExperimentScriptData.Size = new System.Drawing.Size(232, 41);
+            this.ExperimentScriptData.TabIndex = 21;
+            // 
+            // ScriptEffects
+            // 
+            this.ScriptEffects.Display = HexTools.HexEnumerations.DisplayType.Hex;
+            this.ScriptEffects.Endian = HexTools.HexEnumerations.EndianType.Little_Endian;
+            this.ScriptEffects.ExcludeRanged = new int[0];
+            this.ScriptEffects.Hexadecimal = true;
+            this.ScriptEffects.HexOffset = "&H00DC1E";
+            this.ScriptEffects.Input = HexTools.HexEnumerations.InputType.Hex;
+            this.ScriptEffects.Location = new System.Drawing.Point(94, 7);
+            this.ScriptEffects.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.ScriptEffects.MaxLength = 2;
+            this.ScriptEffects.Name = "ScriptEffects";
+            this.ScriptEffects.OvertypeMode = true;
+            this.ScriptEffects.Size = new System.Drawing.Size(90, 31);
+            this.ScriptEffects.TabIndex = 17;
+            this.ScriptEffects.ValueChanged += new System.EventHandler(this.UseEffects_ValueChanged);
+            // 
+            // LabelScriptEffects
+            // 
+            this.LabelScriptEffects.AutoSize = true;
+            this.LabelScriptEffects.Location = new System.Drawing.Point(7, 9);
+            this.LabelScriptEffects.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LabelScriptEffects.Name = "LabelScriptEffects";
+            this.LabelScriptEffects.Size = new System.Drawing.Size(67, 25);
+            this.LabelScriptEffects.TabIndex = 15;
+            this.LabelScriptEffects.Text = "Script";
             // 
             // DescriptionPanel
             // 
@@ -260,55 +329,6 @@ namespace DBZ_LotSS_Editor
             this.PortraitSpriteIndex.Order = 1;
             this.PortraitSpriteIndex.Size = new System.Drawing.Size(138, 39);
             this.PortraitSpriteIndex.TabIndex = 21;
-            // 
-            // HexPanel4
-            // 
-            this.HexPanel4.Controls.Add(this.ExperimentUseScript);
-            this.HexPanel4.Controls.Add(this.Label5);
-            this.HexPanel4.Controls.Add(this.UseScript);
-            this.HexPanel4.IndexOffset = "&H00000A";
-            this.HexPanel4.Location = new System.Drawing.Point(12, 608);
-            this.HexPanel4.Margin = new System.Windows.Forms.Padding(6);
-            this.HexPanel4.Name = "HexPanel4";
-            this.HexPanel4.Padding = new System.Windows.Forms.Padding(6);
-            this.HexPanel4.Pointer = "&H00DC1E";
-            this.HexPanel4.PointerBank = 1;
-            this.HexPanel4.PointerLength = 2;
-            this.HexPanel4.Size = new System.Drawing.Size(706, 98);
-            this.HexPanel4.TabIndex = 37;
-            // 
-            // ExperimentUseScript
-            // 
-            this.ExperimentUseScript.Control = this.UseScript;
-            this.ExperimentUseScript.Location = new System.Drawing.Point(22, 31);
-            this.ExperimentUseScript.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.ExperimentUseScript.Name = "ExperimentUseScript";
-            this.ExperimentUseScript.Size = new System.Drawing.Size(232, 52);
-            this.ExperimentUseScript.TabIndex = 20;
-            // 
-            // UseScript
-            // 
-            this.UseScript.Display = HexTools.HexEnumerations.DisplayType.Hex;
-            this.UseScript.Enabled = false;
-            this.UseScript.Endian = HexTools.HexEnumerations.EndianType.Little_Endian;
-            this.UseScript.Input = HexTools.HexEnumerations.InputType.Hex;
-            this.UseScript.Location = new System.Drawing.Point(260, 39);
-            this.UseScript.Margin = new System.Windows.Forms.Padding(6);
-            this.UseScript.MaxLength = 10;
-            this.UseScript.Name = "UseScript";
-            this.UseScript.OvertypeMode = true;
-            this.UseScript.Size = new System.Drawing.Size(396, 31);
-            this.UseScript.TabIndex = 18;
-            // 
-            // Label5
-            // 
-            this.Label5.AutoSize = true;
-            this.Label5.Location = new System.Drawing.Point(222, 6);
-            this.Label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(111, 25);
-            this.Label5.TabIndex = 19;
-            this.Label5.Text = "Use Script";
             // 
             // HexPanel3
             // 
@@ -780,14 +800,16 @@ namespace DBZ_LotSS_Editor
             this.Name = "Data_Items";
             this.Size = new System.Drawing.Size(1180, 942);
             this.BasicListBoxAssociate1.ResumeLayout(false);
+            this.BasicListBoxAssociate1.PerformLayout();
+            this.hexPanel5.ResumeLayout(false);
+            this.hexPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ScriptEffects)).EndInit();
             this.DescriptionPanel.ResumeLayout(false);
             this.DescriptionPanel.PerformLayout();
             this.NamePanel.ResumeLayout(false);
             this.NamePanel.PerformLayout();
             this.HexPanel7.ResumeLayout(false);
             this.HexPanel7.PerformLayout();
-            this.HexPanel4.ResumeLayout(false);
-            this.HexPanel4.PerformLayout();
             this.HexPanel3.ResumeLayout(false);
             this.HexPanel3.PerformLayout();
             this.HexPanel2.ResumeLayout(false);
@@ -800,9 +822,6 @@ namespace DBZ_LotSS_Editor
         }
         internal HexTools.HexListBox HexListBox1;
         internal BasicTools.BasicControls.BasicListBoxAssociate BasicListBoxAssociate1;
-        internal HexTools.HexPanel HexPanel4;
-        internal Label Label5;
-        internal HexTools.HexTextBox UseScript;
         internal HexTools.HexPanel HexPanel3;
         internal Label Label4;
         internal HexTools.HexPanel HexPanel2;
@@ -818,12 +837,16 @@ namespace DBZ_LotSS_Editor
         internal Label Label13;
         internal HexTools.HexBitFlag PortraitSpriteIndex;
         internal HexTools.HexComboBox PortraitSprite;
-        internal BasicTools.BasicExperimentalControl ExperimentUseScript;
         internal HexTools.HexPanel NamePanel;
         internal HexTools.HexComboBox NameBox;
         internal Label LabelName;
         internal HexTools.HexPanel DescriptionPanel;
         internal HexTools.HexComboBox DescriptionBox;
         internal Label LabelDescription;
+        internal HexTools.HexPanel hexPanel5;
+        internal HexTools.HexNumericBox ScriptEffects;
+        internal Label LabelScriptEffects;
+        private HexTools.HexTextBox hexTextBox1;
+        internal BasicTools.BasicExperimentalControl ExperimentScriptData;
     }
 }

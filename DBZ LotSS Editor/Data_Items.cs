@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HexTools;
+using System;
 
 namespace DBZ_LotSS_Editor
 {
@@ -34,8 +35,17 @@ namespace DBZ_LotSS_Editor
 
         private void HexListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            NamePanel.Visible = DescriptionPanel.Visible = HexPanel1.Visible = HexPanel4.Visible
+            NamePanel.Visible = DescriptionPanel.Visible = HexPanel1.Visible
                 = HexListBox1.SelectedIndex < 40;
+            hexPanel5.Visible = hexTextBox1.Visible = HexListBox1.SelectedIndex < 32;
+        }
+
+        private void UseEffects_ValueChanged(object sender, EventArgs e)
+        {
+            if (HexListBox1.SelectedIndex >= 32) return;
+
+            hexTextBox1.HexOffset = "&H" + HexConvert.IntToHexRaw(HexConvert.SnesToPC("01" + ScriptEffects.Text, true) + 2, 5);
+            hexTextBox1.Load();
         }
     }
 }
