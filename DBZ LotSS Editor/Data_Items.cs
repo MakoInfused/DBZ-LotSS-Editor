@@ -37,15 +37,15 @@ namespace DBZ_LotSS_Editor
         {
             NamePanel.Visible = DescriptionPanel.Visible = HexPanel1.Visible
                 = HexListBox1.SelectedIndex < 40;
-            hexPanel5.Visible = hexTextBox1.Visible = HexListBox1.SelectedIndex < 32;
+            hexPanel5.Visible = Script.Visible = HexListBox1.SelectedIndex < 32;
         }
 
         private void UseEffects_ValueChanged(object sender, EventArgs e)
         {
             if (HexListBox1.SelectedIndex >= 32) return;
 
-            hexTextBox1.HexOffset = "&H" + HexConvert.IntToHexRaw(HexConvert.SnesToPC("01" + ScriptEffects.Text, true) + 2, 5);
-            hexTextBox1.Load();
+            Script.HexOffset = "&H" + HexConvert.IntToHexRaw(HexConvert.SnesToPC("01" + ScriptPointer.Text, true) + 2, 5);
+            Script.Load();
         }
     }
 }

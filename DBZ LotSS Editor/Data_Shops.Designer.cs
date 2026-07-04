@@ -149,7 +149,7 @@
             this.hexComboBoxItemControl1.Control.ItemCollection = "Data_Items.HexListBox1";
             this.hexComboBoxItemControl1.Control.Location = new System.Drawing.Point(0, 0);
             this.hexComboBoxItemControl1.Control.MaxLength = 1;
-            this.hexComboBoxItemControl1.Control.Name = "Skill";
+            this.hexComboBoxItemControl1.Control.Name = "Item";
             this.hexComboBoxItemControl1.Control.Size = new System.Drawing.Size(121, 33);
             this.hexComboBoxItemControl1.Control.TabIndex = 0;
             this.hexComboBoxItemControl1.Control.ValueDisplay = true;
@@ -253,7 +253,7 @@
             this.HexListBox1.Location = new System.Drawing.Point(24, 27);
             this.HexListBox1.Margin = new System.Windows.Forms.Padding(6);
             this.HexListBox1.Name = "HexListBox1";
-            this.HexListBox1.SelectedItem = null;
+            this.HexListBox1.SelectedItem = hexListBoxItem1;
             this.HexListBox1.Size = new System.Drawing.Size(346, 849);
             this.HexListBox1.TabIndex = 17;
             // 

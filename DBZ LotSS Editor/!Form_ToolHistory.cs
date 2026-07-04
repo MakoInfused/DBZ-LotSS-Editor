@@ -1,4 +1,5 @@
-﻿using HexTools;
+﻿using BasicTools;
+using HexTools;
 using Microsoft.VisualBasic.CompilerServices;
 using System;
 using System.Collections.Generic;
@@ -96,7 +97,9 @@ namespace DBZ_LotSS_Editor
                 var OldValue = CreateChangeRecordItem("Old Value", Action.OldValue.HexChanges, new HistoryContextActions(Action.OldValue.HexChanges));
                 var NewValue = CreateChangeRecordItem("New Value", Action.NewValue.HexChanges, new HistoryContextActions(Action.NewValue.HexChanges));
                 var TimeStamp = CreateChangeRecordItem("Modified", Action.Modified, new HistoryContextActions(Action.Modified));
-                var Control = CreateChangeRecordItem("Control", Action.Name, new HistoryContextActions(Action.RawChanges), (TreeNode)Offset, (TreeNode)OldValue, (TreeNode)NewValue, (TreeNode)TimeStamp);
+                var SubModule = ControlExtension.FindParent<HexUserControl>(Action.Control) as HexUserControl;
+                var List = SubModule.GetChildByType<HexListBox>() as HexListBox;
+                var Control = CreateChangeRecordItem("Control", $"{GetStringAfterUnderscore(SubModule.Name)} - {List.SelectedItem.Text} - {Action.Name}", new HistoryContextActions(Action.RawChanges), (TreeNode)Offset, (TreeNode)OldValue, (TreeNode)NewValue, (TreeNode)TimeStamp);
                 var Owner = CreateChangeRecord("Module", Action.OwnerName, (TreeNode)Control) as TreeNode;
                 if (TreeViewHistory.Nodes.ContainsKey(Owner.Name))
                 {
@@ -108,6 +111,27 @@ namespace DBZ_LotSS_Editor
                 }
             }
             TreeViewHistory.ExpandAll();
+        }
+
+        private static string GetStringAfterUnderscore(string input)
+        {
+            // Check for null or empty strings to prevent errors
+            if (string.IsNullOrEmpty(input))
+            {
+                return input;
+            }
+
+            // Find the position of the first underscore
+            int index = input.IndexOf('_');
+
+            // If an underscore is found, return everything after it
+            if (index >= 0)
+            {
+                return input.Substring(index + 1);
+            }
+
+            // If no underscore exists, return the original string
+            return input;
         }
 
         private void RegenerateHistory()
