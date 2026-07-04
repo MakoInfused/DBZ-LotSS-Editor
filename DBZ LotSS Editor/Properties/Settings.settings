@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DBZ_LotSS_Editor.My" GeneratedClassName="Settings" UseMySettingsClassName="true">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DBZ_LotSS_Editor.Properties" GeneratedClassName="Settings" UseMySettingsClassName="true">
   <Profiles />
   <Settings>
     <Setting Name="Recent" Type="System.Collections.ArrayList" Scope="User">
@@ -37,6 +37,9 @@
     </Setting>
     <Setting Name="DataManagement" Type="HexTools.HexEnumerations.DataManagementType" Scope="User">
       <Value Profile="(Default)">Automatic</Value>
+    </Setting>
+    <Setting Name="ActiveSubModule" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
   </Settings>
 </SettingsFile>

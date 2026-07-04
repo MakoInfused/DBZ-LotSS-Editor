@@ -78,6 +78,7 @@ C:\Users\MakoInfused\Source\Repos\DBZ-LotSS-Editor\DBZ LotSS Editor\obj\Debug\ne
 C:\Users\MakoInfused\Source\Repos\DBZ-LotSS-Editor\DBZ LotSS Editor\obj\Debug\net471\DBZ_LotSS_Editor.Data_Groups.resources
 C:\Users\MakoInfused\Source\Repos\DBZ-LotSS-Editor\DBZ LotSS Editor\obj\Debug\net471\DBZ_LotSS_Editor.Data_Items.resources
 C:\Users\MakoInfused\Source\Repos\DBZ-LotSS-Editor\DBZ LotSS Editor\obj\Debug\net471\DBZ_LotSS_Editor.Data_Maps.resources
+C:\Users\MakoInfused\Source\Repos\DBZ-LotSS-Editor\DBZ LotSS Editor\obj\Debug\net471\DBZ_LotSS_Editor.Data_Shops.resources
 C:\Users\MakoInfused\Source\Repos\DBZ-LotSS-Editor\DBZ LotSS Editor\obj\Debug\net471\DBZ_LotSS_Editor.Data_Skills.resources
 C:\Users\MakoInfused\Source\Repos\DBZ-LotSS-Editor\DBZ LotSS Editor\obj\Debug\net471\DBZ_LotSS_Editor.Palette_Battlers.resources
 C:\Users\MakoInfused\Source\Repos\DBZ-LotSS-Editor\DBZ LotSS Editor\obj\Debug\net471\DBZ_LotSS_Editor.Palette_Characters.resources
@@ -105,4 +106,3 @@ C:\Users\MakoInfused\Source\Repos\DBZ-LotSS-Editor\DBZ LotSS Editor\obj\Debug\ne
 C:\Users\MakoInfused\Source\Repos\DBZ-LotSS-Editor\DBZ LotSS Editor\obj\Debug\net471\DBZ LotS.9C222B4D.Up2Date
 C:\Users\MakoInfused\Source\Repos\DBZ-LotSS-Editor\DBZ LotSS Editor\obj\Debug\net471\DBZ LotSS Editor.exe
 C:\Users\MakoInfused\Source\Repos\DBZ-LotSS-Editor\DBZ LotSS Editor\obj\Debug\net471\DBZ LotSS Editor.pdb
-C:\Users\MakoInfused\Source\Repos\DBZ-LotSS-Editor\DBZ LotSS Editor\obj\Debug\net471\DBZ_LotSS_Editor.Data_Shops.resources

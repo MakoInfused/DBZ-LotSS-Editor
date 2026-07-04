@@ -149,6 +149,27 @@ namespace DBZ_LotSS_Editor
                 return null;
             };
 
+            string localAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            string vendorPath = Path.Combine(localAppData, "Cetra_Games");
+
+            if (Directory.Exists(vendorPath))
+            {
+                // Scan for any user.config files that contain the old VB namespace
+                string[] configFiles = Directory.GetFiles(vendorPath, "user.config", SearchOption.AllDirectories);
+                foreach (string file in configFiles)
+                {
+                    try
+                    {
+                        string content = File.ReadAllText(file);
+                        if (content.Contains("DBZ_LotSS_Editor.My.Settings"))
+                        {
+                            File.Delete(file); // Nuke the bad VB.NET config file
+                        }
+                    }
+                    catch { /* Ignore open or locked file handles safely */ }
+                }
+            }
+
             InitializeComponent();
 
             // Lower the minimum size threshold first so it doesn't block the resize
@@ -299,27 +320,27 @@ namespace DBZ_LotSS_Editor
 
         private void LoadAppSettings()
         {
-            if (My.Settings.Default.WindowSize == new Size())
+            if (Properties.Settings.Default.WindowSize == new Size())
                 return;
-            WindowState = (FormWindowState)My.Settings.Default.WindowState;
-            // Location = My.Settings.WindowLocation
-            Size = My.Settings.Default.WindowSize;
-            Normal = new Rectangle(My.Settings.Default.WindowLocation, My.Settings.Default.WindowSize);
-            SystemFormEvent.RaisePreferencesSaved(My.Settings.Default);
+            WindowState = (FormWindowState)Properties.Settings.Default.WindowState;
+            // Location = Properties.Settings.WindowLocation
+            Size = Properties.Settings.Default.WindowSize;
+            Normal = new Rectangle(Properties.Settings.Default.WindowLocation, Properties.Settings.Default.WindowSize);
+            SystemFormEvent.RaisePreferencesSaved(Properties.Settings.Default);
         }
 
         private void SaveAppSettings()
         {
-            My.Settings.Default.WindowState = (int)WindowState;
-            My.Settings.Default.WindowLocation = Normal.Location;
-            My.Settings.Default.WindowSize = Normal.Size;
+            Properties.Settings.Default.WindowState = (int)WindowState;
+            Properties.Settings.Default.WindowLocation = Normal.Location;
+            Properties.Settings.Default.WindowSize = Normal.Size;
         }
 
         private void LoadMDIList()
         {
-            if (My.Settings.Default.AutoLoadWindows == false | My.Settings.Default.MDI == null)
+            if (Properties.Settings.Default.AutoLoadWindows == false | Properties.Settings.Default.MDI == null)
                 return;
-            var windows = My.Settings.Default.MDI.ToArray();
+            var windows = Properties.Settings.Default.MDI.ToArray();
 
             foreach (string mdi in windows)
             {
@@ -334,8 +355,15 @@ namespace DBZ_LotSS_Editor
                 form.Show();
             }
 
-            if(My.Settings.Default.ActiveMDI >= 0)
-                MdiChildren[My.Settings.Default.ActiveMDI].Focus();
+            if(Properties.Settings.Default.ActiveMDI >= 0)
+            {
+                MdiChildren[Properties.Settings.Default.ActiveMDI].Focus();
+                if(Properties.Settings.Default.ActiveSubModule >= 0)
+                {
+                    SetCurrentSubModuleIndex(Properties.Settings.Default.ActiveSubModule);
+                }
+            }
+
 
             DrawVisibleForms();
         }
@@ -367,9 +395,9 @@ namespace DBZ_LotSS_Editor
         private void SaveMDISettings()
         {
             
-            if (My.Settings.Default.AutoLoadWindows == false)
+            if (Properties.Settings.Default.AutoLoadWindows == false)
                 return;
-            My.Settings.Default.MDI = new ArrayList();
+            Properties.Settings.Default.MDI = new ArrayList();
             if (MdiChildren.Count() > 0)
             {
                 int index = 0;
@@ -380,12 +408,16 @@ namespace DBZ_LotSS_Editor
                     string state;
                     state = mdi.GetType().Name + "," + ((int)mdi.WindowState).ToString() + "," + mdi.Normal.Location.X + "," + mdi.Normal.Location.Y + "," + mdi.Normal.Width + "," + mdi.Normal.Height;
 
-                    My.Settings.Default.MDI.Insert(index, state);
+                    Properties.Settings.Default.MDI.Insert(index, state);
                     index += 1;
                 }
             }
-            My.Settings.Default.ActiveMDI = GetCurrentMdiChildIndex();
-            My.Settings.Default.Save();
+            Properties.Settings.Default.ActiveMDI = GetCurrentMdiChildIndex();
+            if(Properties.Settings.Default.ActiveMDI > 0)
+            {
+                Properties.Settings.Default.ActiveSubModule = GetCurrentSubModuleIndex();
+            }
+            Properties.Settings.Default.Save();
         }
 
         private void SaveAllSettings()
@@ -396,24 +428,24 @@ namespace DBZ_LotSS_Editor
 
         private void AddToRecentList(string param_path)
         {
-            if (My.Settings.Default.Recent == null)
-                My.Settings.Default.Recent = new ArrayList();
+            if (Properties.Settings.Default.Recent == null)
+                Properties.Settings.Default.Recent = new ArrayList();
             else
                 RemoveFromRecentList(param_path);
-            My.Settings.Default.Recent.Add(param_path);
-            if (My.Settings.Default.Recent.Count > 10)
-                My.Settings.Default.Recent.RemoveAt(0);
+            Properties.Settings.Default.Recent.Add(param_path);
+            if (Properties.Settings.Default.Recent.Count > 10)
+                Properties.Settings.Default.Recent.RemoveAt(0);
             LoadRecentList();
         }
 
         private void RemoveFromRecentList(string param_path)
         {
             int item_index = 0;
-            for (int index = 0, loopTo = My.Settings.Default.Recent.Count - 1; index <= loopTo; index++)
+            for (int index = 0, loopTo = Properties.Settings.Default.Recent.Count - 1; index <= loopTo; index++)
             {
-                if (Conversions.ToBoolean(Operators.ConditionalCompareObjectEqual(My.Settings.Default.Recent[item_index], param_path, false)))
+                if (Conversions.ToBoolean(Operators.ConditionalCompareObjectEqual(Properties.Settings.Default.Recent[item_index], param_path, false)))
                 {
-                    My.Settings.Default.Recent.RemoveAt(item_index);
+                    Properties.Settings.Default.Recent.RemoveAt(item_index);
                 }
                 else
                 {
@@ -426,7 +458,7 @@ namespace DBZ_LotSS_Editor
 
         private void ClearRecentList()
         {
-            My.Settings.Default.Recent.Clear();
+            Properties.Settings.Default.Recent.Clear();
             LoadRecentList();
         }
 
@@ -438,7 +470,7 @@ namespace DBZ_LotSS_Editor
 
         private void ReloadRecentFile()
         {
-            if (My.Settings.Default.AutoLoadRecent && My.Settings.Default.Recent?.Count > 0)
+            if (Properties.Settings.Default.AutoLoadRecent && Properties.Settings.Default.Recent?.Count > 0)
             {
                 OpenRecentFile(1);
             }
@@ -446,18 +478,18 @@ namespace DBZ_LotSS_Editor
 
         private void OpenRecentFile(int param_index)
         {
-            if (My.Settings.Default.Recent.Count <= 0 || param_index > My.Settings.Default.Recent.Count)
+            if (Properties.Settings.Default.Recent.Count <= 0 || param_index > Properties.Settings.Default.Recent.Count)
                 return;
-            OpenFile(Conversions.ToString(My.Settings.Default.Recent[My.Settings.Default.Recent.Count - param_index]));
+            OpenFile(Conversions.ToString(Properties.Settings.Default.Recent[Properties.Settings.Default.Recent.Count - param_index]));
         }
 
         private void LoadRecentList()
         {
-            if (My.Settings.Default.Recent == null)
+            if (Properties.Settings.Default.Recent == null)
                 return;
             RecentToolStripMenuItem.DropDownItems.Clear();
             int index = 1;
-            foreach (string item_list in (IEnumerable)BasicHelper.GetArrayReverse(My.Settings.Default.Recent))
+            foreach (string item_list in (IEnumerable)BasicHelper.GetArrayReverse(Properties.Settings.Default.Recent))
             {
                 if (index > 10)
                     break;
@@ -613,7 +645,7 @@ namespace DBZ_LotSS_Editor
     {
         var BackupIndexGroup = Match.Groups[1];
         int OffsetIndex = BackupIndexGroup.Index - (BackupFilePath.Length - Match.Value.Length);
-        NewFileIndex = Math.Min(Conversions.ToInteger(BackupIndexGroup.Value) + 1, My.Settings.Default.Backups);
+        NewFileIndex = Math.Min(Conversions.ToInteger(BackupIndexGroup.Value) + 1, Properties.Settings.Default.Backups);
         return Match.Value.ReplaceAt(OffsetIndex, NewFileIndex.ToString("00"));
     });
                 if (Conversions.ToBoolean(NewFileIndex & Conversions.ToInteger(!File.Exists(NewBackupFilePath))))
@@ -634,8 +666,8 @@ namespace DBZ_LotSS_Editor
         {
             try
             {
-                if (My.Settings.Default.AutoBackup)
-                    GenerateBackup(FileLocation, My.Settings.Default.Backups);
+                if (Properties.Settings.Default.AutoBackup)
+                    GenerateBackup(FileLocation, Properties.Settings.Default.Backups);
                 File.WriteAllBytes(FileLocation, HexStorage.Memory);
                 HexStorage.Save();
                 Status = "Saved";
@@ -857,6 +889,21 @@ namespace DBZ_LotSS_Editor
         private int GetCurrentMdiChildIndex()
         {
             return Array.IndexOf(MdiChildren, ActiveMdiChild);
+        }
+
+        private int GetCurrentSubModuleIndex()
+        {
+            var module = ActiveMdiChild as Control;
+            var tabControl = module.GetChildByType<TabControl>() as TabControl;
+            var subModule = tabControl.SelectedIndex;
+            return subModule;
+        }
+
+        private void SetCurrentSubModuleIndex(int index)
+        {
+            var module = ActiveMdiChild as Control;
+            var tabControl = module.GetChildByType<TabControl>() as TabControl;
+            tabControl.SelectedIndex = index;
         }
 
         private void GoToNextMdiChild()

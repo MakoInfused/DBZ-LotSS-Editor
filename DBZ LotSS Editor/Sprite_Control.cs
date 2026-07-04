@@ -188,7 +188,7 @@ namespace DBZ_LotSS_Editor
                 var test = true;
             }
 
-            if (My.Settings.Default.DataManagement == DataManagementType.Manual)
+            if (Properties.Settings.Default.DataManagement == DataManagementType.Manual)
             {
                 if (MessageBox.Show("The new image is too large to fit into the space allocated for the original image." +
                 Environment.NewLine + Environment.NewLine +

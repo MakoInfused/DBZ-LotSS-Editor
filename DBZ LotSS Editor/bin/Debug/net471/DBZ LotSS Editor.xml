@@ -21,273 +21,273 @@
             the contents of this method with the code editor.
             </summary>
         </member>
-        <member name="T:DBZ_LotSS_Editor.My.Resources.Resources">
+        <member name="T:DBZ_LotSS_Editor.Resources">
             <summary>
               A strongly-typed resource class, for looking up localized strings, etc.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.ResourceManager">
+        <member name="P:DBZ_LotSS_Editor.Resources.ResourceManager">
             <summary>
               Returns the cached ResourceManager instance used by this class.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.Culture">
+        <member name="P:DBZ_LotSS_Editor.Resources.Culture">
             <summary>
               Overrides the current thread's CurrentUICulture property for all
               resource lookups using this strongly typed resource class.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.Add">
+        <member name="P:DBZ_LotSS_Editor.Resources.Add">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.addons32">
+        <member name="P:DBZ_LotSS_Editor.Resources.addons32">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.close32">
+        <member name="P:DBZ_LotSS_Editor.Resources.close32">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.Copy">
+        <member name="P:DBZ_LotSS_Editor.Resources.Copy">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.Cut">
+        <member name="P:DBZ_LotSS_Editor.Resources.Cut">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.DataEditor_Characters">
+        <member name="P:DBZ_LotSS_Editor.Resources.DataEditor_Characters">
             <summary>
               Looks up a localized resource of type System.Byte[].
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.DBZ_LotSS_Icon">
+        <member name="P:DBZ_LotSS_Editor.Resources.DBZ_LotSS_Icon">
             <summary>
               Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.DefaultTable">
+        <member name="P:DBZ_LotSS_Editor.Resources.DefaultTable">
             <summary>
               Looks up a localized resource of type System.Byte[].
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.exit16">
+        <member name="P:DBZ_LotSS_Editor.Resources.exit16">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.Export">
+        <member name="P:DBZ_LotSS_Editor.Resources.Export">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.fill16">
+        <member name="P:DBZ_LotSS_Editor.Resources.fill16">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.find32">
+        <member name="P:DBZ_LotSS_Editor.Resources.find32">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.fontcolor16">
+        <member name="P:DBZ_LotSS_Editor.Resources.fontcolor16">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.goto16">
+        <member name="P:DBZ_LotSS_Editor.Resources.goto16">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.image16">
+        <member name="P:DBZ_LotSS_Editor.Resources.image16">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.Import">
+        <member name="P:DBZ_LotSS_Editor.Resources.Import">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.multilevellist16">
+        <member name="P:DBZ_LotSS_Editor.Resources.multilevellist16">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.Musical32">
+        <member name="P:DBZ_LotSS_Editor.Resources.Musical32">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.newdocument32">
+        <member name="P:DBZ_LotSS_Editor.Resources.newdocument32">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.Open">
+        <member name="P:DBZ_LotSS_Editor.Resources.Open">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.options16">
+        <member name="P:DBZ_LotSS_Editor.Resources.options16">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.orderedlist16">
+        <member name="P:DBZ_LotSS_Editor.Resources.orderedlist16">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.PaletteEditor_Battlers">
+        <member name="P:DBZ_LotSS_Editor.Resources.PaletteEditor_Battlers">
             <summary>
               Looks up a localized resource of type System.Byte[].
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.PaletteEditor_Characters">
+        <member name="P:DBZ_LotSS_Editor.Resources.PaletteEditor_Characters">
             <summary>
               Looks up a localized resource of type System.Byte[].
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.PaletteEditor_Flyers">
+        <member name="P:DBZ_LotSS_Editor.Resources.PaletteEditor_Flyers">
             <summary>
               Looks up a localized resource of type System.Byte[].
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.PaletteEditor_Portraits">
+        <member name="P:DBZ_LotSS_Editor.Resources.PaletteEditor_Portraits">
             <summary>
               Looks up a localized resource of type System.Byte[].
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.PaletteEditor_System">
+        <member name="P:DBZ_LotSS_Editor.Resources.PaletteEditor_System">
             <summary>
               Looks up a localized resource of type System.Byte[].
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.Paste">
+        <member name="P:DBZ_LotSS_Editor.Resources.Paste">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.prepare32">
+        <member name="P:DBZ_LotSS_Editor.Resources.prepare32">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.printpreview32">
+        <member name="P:DBZ_LotSS_Editor.Resources.printpreview32">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.publish32">
+        <member name="P:DBZ_LotSS_Editor.Resources.publish32">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.redo16">
+        <member name="P:DBZ_LotSS_Editor.Resources.redo16">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.Reload">
+        <member name="P:DBZ_LotSS_Editor.Resources.Reload">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.Remove">
+        <member name="P:DBZ_LotSS_Editor.Resources.Remove">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.Save">
+        <member name="P:DBZ_LotSS_Editor.Resources.Save">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.saveas32">
+        <member name="P:DBZ_LotSS_Editor.Resources.saveas32">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.select16">
+        <member name="P:DBZ_LotSS_Editor.Resources.select16">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.sort16">
+        <member name="P:DBZ_LotSS_Editor.Resources.sort16">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.SpriteEditor_Battlers">
+        <member name="P:DBZ_LotSS_Editor.Resources.SpriteEditor_Battlers">
             <summary>
               Looks up a localized resource of type System.Byte[].
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.SpriteEditor_Characters">
+        <member name="P:DBZ_LotSS_Editor.Resources.SpriteEditor_Characters">
             <summary>
               Looks up a localized resource of type System.Byte[].
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.SpriteEditor_Flyers">
+        <member name="P:DBZ_LotSS_Editor.Resources.SpriteEditor_Flyers">
             <summary>
               Looks up a localized resource of type System.Byte[].
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.SpriteEditor_Portraits">
+        <member name="P:DBZ_LotSS_Editor.Resources.SpriteEditor_Portraits">
             <summary>
               Looks up a localized resource of type System.Byte[].
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.SpriteEditor_System">
+        <member name="P:DBZ_LotSS_Editor.Resources.SpriteEditor_System">
             <summary>
               Looks up a localized resource of type System.Byte[].
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.styleset16">
+        <member name="P:DBZ_LotSS_Editor.Resources.styleset16">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.TextEditor_Battlers">
+        <member name="P:DBZ_LotSS_Editor.Resources.TextEditor_Battlers">
             <summary>
               Looks up a localized resource of type System.Byte[].
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.TextEditor_Characters">
+        <member name="P:DBZ_LotSS_Editor.Resources.TextEditor_Characters">
             <summary>
               Looks up a localized resource of type System.Byte[].
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.TextEditor_Descriptions">
+        <member name="P:DBZ_LotSS_Editor.Resources.TextEditor_Descriptions">
             <summary>
               Looks up a localized resource of type System.Byte[].
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.TextEditor_Dialogues">
+        <member name="P:DBZ_LotSS_Editor.Resources.TextEditor_Dialogues">
             <summary>
               Looks up a localized resource of type System.Byte[].
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.TextEditor_Items">
+        <member name="P:DBZ_LotSS_Editor.Resources.TextEditor_Items">
             <summary>
               Looks up a localized resource of type System.Byte[].
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.TextEditor_Skills">
+        <member name="P:DBZ_LotSS_Editor.Resources.TextEditor_Skills">
             <summary>
               Looks up a localized resource of type System.Byte[].
             </summary>
         </member>
-        <member name="P:DBZ_LotSS_Editor.My.Resources.Resources.undo16">
+        <member name="P:DBZ_LotSS_Editor.Resources.undo16">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>

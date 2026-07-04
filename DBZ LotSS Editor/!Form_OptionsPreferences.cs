@@ -16,66 +16,66 @@ namespace DBZ_LotSS_Editor
 
         private void Form_OptionsPreferences_Load(object sender, EventArgs e)
         {
-            My.Settings.Default.Reload();
-            AutoLoadWindows.Checked = My.Settings.Default.AutoLoadWindows;
-            AutoLoadRecent.Checked = My.Settings.Default.AutoLoadRecent;
-            AutoBackup.Checked = My.Settings.Default.AutoBackup;
-            Backups.Value = My.Settings.Default.Backups;
-            SupressUnsafeWarnings.Checked = My.Settings.Default.SupressUnsafeWarnings;
+            Properties.Settings.Default.Reload();
+            AutoLoadWindows.Checked = Properties.Settings.Default.AutoLoadWindows;
+            AutoLoadRecent.Checked = Properties.Settings.Default.AutoLoadRecent;
+            AutoBackup.Checked = Properties.Settings.Default.AutoBackup;
+            Backups.Value = Properties.Settings.Default.Backups;
+            SupressUnsafeWarnings.Checked = Properties.Settings.Default.SupressUnsafeWarnings;
             if(DataManagement.Items.Count == 0)
             {
                 DataManagement.Items.AddRange(Enum.GetValues(typeof(DataManagementType))
                     .Cast<object>().ToArray());
             }
-            DataManagement.SelectedItem = My.Settings.Default.DataManagement;
+            DataManagement.SelectedItem = Properties.Settings.Default.DataManagement;
         }
 
         private void AutoLoadWindows_CheckedChanged(object sender, EventArgs e)
         {
-            My.Settings.Default.AutoLoadWindows = AutoLoadWindows.Checked;
+            Properties.Settings.Default.AutoLoadWindows = AutoLoadWindows.Checked;
         }
 
         private void AutoLoadRecent_CheckedChanged(object sender, EventArgs e)
         {
-            My.Settings.Default.AutoLoadRecent = AutoLoadRecent.Checked;
+            Properties.Settings.Default.AutoLoadRecent = AutoLoadRecent.Checked;
         }
 
         private void AutoBackup_CheckedChanged(object sender, EventArgs e)
         {
-            My.Settings.Default.AutoBackup = AutoBackup.Checked;
+            Properties.Settings.Default.AutoBackup = AutoBackup.Checked;
             BackupsPanel.Enabled = AutoBackup.Checked;
         }
 
         private void Backups_ValueChanged(object sender, EventArgs e)
         {
-            My.Settings.Default.Backups = (byte)Math.Round(Backups.Value);
+            Properties.Settings.Default.Backups = (byte)Math.Round(Backups.Value);
         }
 
         private void SupressUnsafeWarnings_CheckedChanged(object sender, EventArgs e)
         {
-            My.Settings.Default.SupressUnsafeWarnings = SupressUnsafeWarnings.Checked;
+            Properties.Settings.Default.SupressUnsafeWarnings = SupressUnsafeWarnings.Checked;
         }
 
         private void DataManagement_SelectedIndexChanged(object sender, EventArgs e)
         {
-            My.Settings.Default.DataManagement = (DataManagementType) DataManagement.SelectedItem;
+            Properties.Settings.Default.DataManagement = (DataManagementType) DataManagement.SelectedItem;
         }
 
         private void Form_OptionsPreferences_FormClosing(object sender, FormClosingEventArgs e)
         {
-            My.Settings.Default.Reload();
+            Properties.Settings.Default.Reload();
         }
 
         private void OK_Button_Click(object sender, EventArgs e)
         {
-            My.Settings.Default.Save();
-            SystemFormEvent.RaisePreferencesSaved(My.Settings.Default);
+            Properties.Settings.Default.Save();
+            SystemFormEvent.RaisePreferencesSaved(Properties.Settings.Default);
             Close();
         }
 
         private void Cancel_Button_Click(object sender, EventArgs e)
         {
-            My.Settings.Default.Reload();
+            Properties.Settings.Default.Reload();
             Close();
         }
     }
