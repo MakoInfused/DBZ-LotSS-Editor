@@ -906,7 +906,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "0.78.0",
+    "version": "0.79.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\MakoInfused\\Source\\Repos\\DBZ-LotSS-Editor\\DBZ LotSS Editor\\DBZ LotSS Editor.csproj",
       "projectName": "DBZ LotSS Editor",
