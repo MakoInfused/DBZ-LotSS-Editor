@@ -260,7 +260,7 @@ namespace DBZ_LotSS_Editor
         private void ButtonReset_Click(object sender, EventArgs e)
         {
             CustomFontTable.Clear();
-            LoadTableIntoMemory(My.Resources.Resources.DefaultTable);
+            LoadTableIntoMemory(global::DBZ_LotSS_Editor.Resources.DefaultTable);
             Sync();
         }
 

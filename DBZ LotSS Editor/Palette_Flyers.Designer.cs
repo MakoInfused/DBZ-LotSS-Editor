@@ -57,7 +57,7 @@ namespace DBZ_LotSS_Editor
             this.HexListBox1.Margin = new System.Windows.Forms.Padding(4);
             this.HexListBox1.Name = "HexListBox1";
             this.HexListBox1.SelectedItem = null;
-            this.HexListBox1.Size = new System.Drawing.Size(232, 550);
+            this.HexListBox1.Size = new System.Drawing.Size(232, 480);
             this.HexListBox1.TabIndex = 14;
             // 
             // BasicListBoxAssociate1
@@ -67,7 +67,7 @@ namespace DBZ_LotSS_Editor
             this.BasicListBoxAssociate1.ListBox = this.HexListBox1;
             this.BasicListBoxAssociate1.Location = new System.Drawing.Point(255, 17);
             this.BasicListBoxAssociate1.Name = "BasicListBoxAssociate1";
-            this.BasicListBoxAssociate1.Size = new System.Drawing.Size(518, 550);
+            this.BasicListBoxAssociate1.Size = new System.Drawing.Size(508, 530);
             this.BasicListBoxAssociate1.TabIndex = 18;
             this.BasicListBoxAssociate1.TabStop = false;
             this.BasicListBoxAssociate1.Text = "HexListBox1";
@@ -77,7 +77,7 @@ namespace DBZ_LotSS_Editor
             this.HexPalette.Endian = HexTools.HexEnumerations.EndianType.Little_Endian;
             this.HexPalette.Location = new System.Drawing.Point(7, 28);
             this.HexPalette.Name = "HexPalette";
-            this.HexPalette.Size = new System.Drawing.Size(377, 101);
+            this.HexPalette.Size = new System.Drawing.Size(377, 112);
             this.HexPalette.TabIndex = 20;
             // 
             // Palette_Flyers

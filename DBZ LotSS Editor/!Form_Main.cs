@@ -461,7 +461,7 @@ namespace DBZ_LotSS_Editor
             {
                 if (index > 10)
                     break;
-                RecentToolStripMenuItem.DropDownItems.Add(Conversions.ToString(Operators.ConcatenateObject(index + ": ", GetShortPath(item_list))), My.Resources.Resources.newdocument32, UseRecentList);
+                RecentToolStripMenuItem.DropDownItems.Add(Conversions.ToString(Operators.ConcatenateObject(index + ": ", GetShortPath(item_list))), global::DBZ_LotSS_Editor.Resources.newdocument32, UseRecentList);
                 RecentToolStripMenuItem.DropDownItems[index - 1].Name = index.ToString();
                 index += 1;
             }

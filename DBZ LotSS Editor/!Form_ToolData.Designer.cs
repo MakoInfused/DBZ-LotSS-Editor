@@ -220,7 +220,7 @@ namespace DBZ_LotSS_Editor
             // 
             // CopyToolStripMenuItem
             // 
-            CopyToolStripMenuItem.Image = My.Resources.Resources.Copy;
+            CopyToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.Copy;
             CopyToolStripMenuItem.Name = "CopyToolStripMenuItem";
             CopyToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.C;
             CopyToolStripMenuItem.Size = new Size(167, 26);
@@ -263,7 +263,7 @@ namespace DBZ_LotSS_Editor
             // 
             // FindToolStripMenuItem
             // 
-            FindToolStripMenuItem.Image = My.Resources.Resources.find32;
+            FindToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.find32;
             FindToolStripMenuItem.Name = "FindToolStripMenuItem";
             FindToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.F;
             FindToolStripMenuItem.Size = new Size(196, 26);
@@ -297,7 +297,7 @@ namespace DBZ_LotSS_Editor
             // 
             // ClearToolStripMenuItem
             // 
-            ClearToolStripMenuItem.Image = My.Resources.Resources.exit16;
+            ClearToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.exit16;
             ClearToolStripMenuItem.Name = "ClearToolStripMenuItem";
             ClearToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Alt | Keys.F;
             ClearToolStripMenuItem.Size = new Size(196, 26);
@@ -433,7 +433,7 @@ namespace DBZ_LotSS_Editor
             // 
             // GoToToolStripMenuItem
             // 
-            GoToToolStripMenuItem.Image = My.Resources.Resources.goto16;
+            GoToToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.goto16;
             GoToToolStripMenuItem.Name = "GoToToolStripMenuItem";
             GoToToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.G;
             GoToToolStripMenuItem.Size = new Size(175, 26);

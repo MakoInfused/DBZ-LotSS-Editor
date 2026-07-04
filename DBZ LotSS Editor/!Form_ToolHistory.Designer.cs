@@ -136,7 +136,7 @@ namespace DBZ_LotSS_Editor
             CheckBoxSort.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             CheckBoxSort.Appearance = Appearance.Button;
             CheckBoxSort.AutoSize = true;
-            CheckBoxSort.Image = My.Resources.Resources.sort16;
+            CheckBoxSort.Image = global::DBZ_LotSS_Editor.Resources.sort16;
             CheckBoxSort.ImageAlign = ContentAlignment.MiddleLeft;
             CheckBoxSort.Location = new Point(517, 4);
             CheckBoxSort.Margin = new Padding(4);
@@ -311,7 +311,7 @@ namespace DBZ_LotSS_Editor
             // 
             // CopyToolStripMenuItem
             // 
-            CopyToolStripMenuItem.Image = My.Resources.Resources.Copy;
+            CopyToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.Copy;
             CopyToolStripMenuItem.Name = "CopyToolStripMenuItem";
             CopyToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.C;
             CopyToolStripMenuItem.Size = new Size(167, 26);

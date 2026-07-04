@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DBZ_LotSS_Editor.My.Resources {
+namespace DBZ_LotSS_Editor {
     using System;
     
     
@@ -22,7 +22,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DBZ_LotSS_Editor.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Add {
+        public static System.Drawing.Bitmap Add {
             get {
                 object obj = ResourceManager.GetObject("Add", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +73,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap addons32 {
+        public static System.Drawing.Bitmap addons32 {
             get {
                 object obj = ResourceManager.GetObject("addons32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +83,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap close32 {
+        public static System.Drawing.Bitmap close32 {
             get {
                 object obj = ResourceManager.GetObject("close32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +93,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Copy {
+        public static System.Drawing.Bitmap Copy {
             get {
                 object obj = ResourceManager.GetObject("Copy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,7 +103,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Cut {
+        public static System.Drawing.Bitmap Cut {
             get {
                 object obj = ResourceManager.GetObject("Cut", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -113,7 +113,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] DataEditor_Characters {
+        public static byte[] DataEditor_Characters {
             get {
                 object obj = ResourceManager.GetObject("DataEditor_Characters", resourceCulture);
                 return ((byte[])(obj));
@@ -123,7 +123,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon DBZ_LotSS_Icon {
+        public static System.Drawing.Icon DBZ_LotSS_Icon {
             get {
                 object obj = ResourceManager.GetObject("DBZ_LotSS_Icon", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -133,7 +133,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] DefaultTable {
+        public static byte[] DefaultTable {
             get {
                 object obj = ResourceManager.GetObject("DefaultTable", resourceCulture);
                 return ((byte[])(obj));
@@ -143,7 +143,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap exit16 {
+        public static System.Drawing.Bitmap exit16 {
             get {
                 object obj = ResourceManager.GetObject("exit16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -153,7 +153,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Export {
+        public static System.Drawing.Bitmap Export {
             get {
                 object obj = ResourceManager.GetObject("Export", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -163,7 +163,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap fill16 {
+        public static System.Drawing.Bitmap fill16 {
             get {
                 object obj = ResourceManager.GetObject("fill16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -173,7 +173,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap find32 {
+        public static System.Drawing.Bitmap find32 {
             get {
                 object obj = ResourceManager.GetObject("find32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -183,7 +183,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap fontcolor16 {
+        public static System.Drawing.Bitmap fontcolor16 {
             get {
                 object obj = ResourceManager.GetObject("fontcolor16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -193,7 +193,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap goto16 {
+        public static System.Drawing.Bitmap goto16 {
             get {
                 object obj = ResourceManager.GetObject("goto16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -203,7 +203,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap image16 {
+        public static System.Drawing.Bitmap image16 {
             get {
                 object obj = ResourceManager.GetObject("image16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -213,7 +213,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Import {
+        public static System.Drawing.Bitmap Import {
             get {
                 object obj = ResourceManager.GetObject("Import", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -223,7 +223,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap multilevellist16 {
+        public static System.Drawing.Bitmap multilevellist16 {
             get {
                 object obj = ResourceManager.GetObject("multilevellist16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -233,7 +233,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Musical32 {
+        public static System.Drawing.Bitmap Musical32 {
             get {
                 object obj = ResourceManager.GetObject("Musical32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -243,7 +243,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap newdocument32 {
+        public static System.Drawing.Bitmap newdocument32 {
             get {
                 object obj = ResourceManager.GetObject("newdocument32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -253,7 +253,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Open {
+        public static System.Drawing.Bitmap Open {
             get {
                 object obj = ResourceManager.GetObject("Open", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -263,7 +263,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap options16 {
+        public static System.Drawing.Bitmap options16 {
             get {
                 object obj = ResourceManager.GetObject("options16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -273,7 +273,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap orderedlist16 {
+        public static System.Drawing.Bitmap orderedlist16 {
             get {
                 object obj = ResourceManager.GetObject("orderedlist16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -283,7 +283,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] PaletteEditor_Battlers {
+        public static byte[] PaletteEditor_Battlers {
             get {
                 object obj = ResourceManager.GetObject("PaletteEditor_Battlers", resourceCulture);
                 return ((byte[])(obj));
@@ -293,7 +293,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] PaletteEditor_Characters {
+        public static byte[] PaletteEditor_Characters {
             get {
                 object obj = ResourceManager.GetObject("PaletteEditor_Characters", resourceCulture);
                 return ((byte[])(obj));
@@ -303,7 +303,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] PaletteEditor_Flyers {
+        public static byte[] PaletteEditor_Flyers {
             get {
                 object obj = ResourceManager.GetObject("PaletteEditor_Flyers", resourceCulture);
                 return ((byte[])(obj));
@@ -313,7 +313,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] PaletteEditor_Portraits {
+        public static byte[] PaletteEditor_Portraits {
             get {
                 object obj = ResourceManager.GetObject("PaletteEditor_Portraits", resourceCulture);
                 return ((byte[])(obj));
@@ -323,7 +323,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] PaletteEditor_System {
+        public static byte[] PaletteEditor_System {
             get {
                 object obj = ResourceManager.GetObject("PaletteEditor_System", resourceCulture);
                 return ((byte[])(obj));
@@ -333,7 +333,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Paste {
+        public static System.Drawing.Bitmap Paste {
             get {
                 object obj = ResourceManager.GetObject("Paste", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -343,7 +343,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap prepare32 {
+        public static System.Drawing.Bitmap prepare32 {
             get {
                 object obj = ResourceManager.GetObject("prepare32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -353,7 +353,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap printpreview32 {
+        public static System.Drawing.Bitmap printpreview32 {
             get {
                 object obj = ResourceManager.GetObject("printpreview32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -363,7 +363,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap publish32 {
+        public static System.Drawing.Bitmap publish32 {
             get {
                 object obj = ResourceManager.GetObject("publish32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -373,7 +373,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap redo16 {
+        public static System.Drawing.Bitmap redo16 {
             get {
                 object obj = ResourceManager.GetObject("redo16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -383,7 +383,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Reload {
+        public static System.Drawing.Bitmap Reload {
             get {
                 object obj = ResourceManager.GetObject("Reload", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -393,7 +393,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Remove {
+        public static System.Drawing.Bitmap Remove {
             get {
                 object obj = ResourceManager.GetObject("Remove", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -403,7 +403,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Save {
+        public static System.Drawing.Bitmap Save {
             get {
                 object obj = ResourceManager.GetObject("Save", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -413,7 +413,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap saveas32 {
+        public static System.Drawing.Bitmap saveas32 {
             get {
                 object obj = ResourceManager.GetObject("saveas32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -423,7 +423,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap select16 {
+        public static System.Drawing.Bitmap select16 {
             get {
                 object obj = ResourceManager.GetObject("select16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -433,7 +433,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap sort16 {
+        public static System.Drawing.Bitmap sort16 {
             get {
                 object obj = ResourceManager.GetObject("sort16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -443,7 +443,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] SpriteEditor_Battlers {
+        public static byte[] SpriteEditor_Battlers {
             get {
                 object obj = ResourceManager.GetObject("SpriteEditor_Battlers", resourceCulture);
                 return ((byte[])(obj));
@@ -453,7 +453,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] SpriteEditor_Characters {
+        public static byte[] SpriteEditor_Characters {
             get {
                 object obj = ResourceManager.GetObject("SpriteEditor_Characters", resourceCulture);
                 return ((byte[])(obj));
@@ -463,7 +463,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] SpriteEditor_Flyers {
+        public static byte[] SpriteEditor_Flyers {
             get {
                 object obj = ResourceManager.GetObject("SpriteEditor_Flyers", resourceCulture);
                 return ((byte[])(obj));
@@ -473,7 +473,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] SpriteEditor_Portraits {
+        public static byte[] SpriteEditor_Portraits {
             get {
                 object obj = ResourceManager.GetObject("SpriteEditor_Portraits", resourceCulture);
                 return ((byte[])(obj));
@@ -483,7 +483,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] SpriteEditor_System {
+        public static byte[] SpriteEditor_System {
             get {
                 object obj = ResourceManager.GetObject("SpriteEditor_System", resourceCulture);
                 return ((byte[])(obj));
@@ -493,7 +493,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap styleset16 {
+        public static System.Drawing.Bitmap styleset16 {
             get {
                 object obj = ResourceManager.GetObject("styleset16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -503,7 +503,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] TextEditor_Battlers {
+        public static byte[] TextEditor_Battlers {
             get {
                 object obj = ResourceManager.GetObject("TextEditor_Battlers", resourceCulture);
                 return ((byte[])(obj));
@@ -513,7 +513,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] TextEditor_Characters {
+        public static byte[] TextEditor_Characters {
             get {
                 object obj = ResourceManager.GetObject("TextEditor_Characters", resourceCulture);
                 return ((byte[])(obj));
@@ -523,7 +523,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] TextEditor_Descriptions {
+        public static byte[] TextEditor_Descriptions {
             get {
                 object obj = ResourceManager.GetObject("TextEditor_Descriptions", resourceCulture);
                 return ((byte[])(obj));
@@ -533,7 +533,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] TextEditor_Dialogues {
+        public static byte[] TextEditor_Dialogues {
             get {
                 object obj = ResourceManager.GetObject("TextEditor_Dialogues", resourceCulture);
                 return ((byte[])(obj));
@@ -543,7 +543,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] TextEditor_Items {
+        public static byte[] TextEditor_Items {
             get {
                 object obj = ResourceManager.GetObject("TextEditor_Items", resourceCulture);
                 return ((byte[])(obj));
@@ -553,7 +553,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] TextEditor_Skills {
+        public static byte[] TextEditor_Skills {
             get {
                 object obj = ResourceManager.GetObject("TextEditor_Skills", resourceCulture);
                 return ((byte[])(obj));
@@ -563,7 +563,7 @@ namespace DBZ_LotSS_Editor.My.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap undo16 {
+        public static System.Drawing.Bitmap undo16 {
             get {
                 object obj = ResourceManager.GetObject("undo16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));

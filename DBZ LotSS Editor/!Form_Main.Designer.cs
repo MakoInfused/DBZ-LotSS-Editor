@@ -137,7 +137,7 @@ namespace DBZ_LotSS_Editor
             // 
             // OpenToolStripMenuItem
             // 
-            this.OpenToolStripMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.Open;
+            this.OpenToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.Open;
             this.OpenToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem";
             this.OpenToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
@@ -147,7 +147,7 @@ namespace DBZ_LotSS_Editor
             // 
             // RecentToolStripMenuItem
             // 
-            this.RecentToolStripMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.newdocument32;
+            this.RecentToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.newdocument32;
             this.RecentToolStripMenuItem.Name = "RecentToolStripMenuItem";
             this.RecentToolStripMenuItem.Size = new System.Drawing.Size(222, 26);
             this.RecentToolStripMenuItem.Text = "Recent";
@@ -155,7 +155,7 @@ namespace DBZ_LotSS_Editor
             // ReloadMenuItem
             // 
             this.ReloadMenuItem.Enabled = false;
-            this.ReloadMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.Reload;
+            this.ReloadMenuItem.Image = global::DBZ_LotSS_Editor.Resources.Reload;
             this.ReloadMenuItem.Name = "ReloadMenuItem";
             this.ReloadMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
             this.ReloadMenuItem.Size = new System.Drawing.Size(222, 26);
@@ -165,7 +165,7 @@ namespace DBZ_LotSS_Editor
             // CloseMenuItem
             // 
             this.CloseMenuItem.Enabled = false;
-            this.CloseMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.close32;
+            this.CloseMenuItem.Image = global::DBZ_LotSS_Editor.Resources.close32;
             this.CloseMenuItem.Name = "CloseMenuItem";
             this.CloseMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.C)));
             this.CloseMenuItem.Size = new System.Drawing.Size(222, 26);
@@ -180,7 +180,7 @@ namespace DBZ_LotSS_Editor
             // SaveToolStripMenuItem
             // 
             this.SaveToolStripMenuItem.Enabled = false;
-            this.SaveToolStripMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.Save;
+            this.SaveToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.Save;
             this.SaveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem";
             this.SaveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
@@ -191,7 +191,7 @@ namespace DBZ_LotSS_Editor
             // SaveAsToolStripMenuItem
             // 
             this.SaveAsToolStripMenuItem.Enabled = false;
-            this.SaveAsToolStripMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.saveas32;
+            this.SaveAsToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.saveas32;
             this.SaveAsToolStripMenuItem.Name = "SaveAsToolStripMenuItem";
             this.SaveAsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
             | System.Windows.Forms.Keys.S)));
@@ -206,7 +206,7 @@ namespace DBZ_LotSS_Editor
             // 
             // ExitToolStripMenuItem
             // 
-            this.ExitToolStripMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.exit16;
+            this.ExitToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.exit16;
             this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
             this.ExitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.ExitToolStripMenuItem.Size = new System.Drawing.Size(222, 26);
@@ -230,7 +230,7 @@ namespace DBZ_LotSS_Editor
             // UndoToolStripMenuItem
             // 
             this.UndoToolStripMenuItem.Enabled = false;
-            this.UndoToolStripMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.undo16;
+            this.UndoToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.undo16;
             this.UndoToolStripMenuItem.Name = "UndoToolStripMenuItem";
             this.UndoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
             this.UndoToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
@@ -240,7 +240,7 @@ namespace DBZ_LotSS_Editor
             // RedoToolStripMenuItem
             // 
             this.RedoToolStripMenuItem.Enabled = false;
-            this.RedoToolStripMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.redo16;
+            this.RedoToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.redo16;
             this.RedoToolStripMenuItem.Name = "RedoToolStripMenuItem";
             this.RedoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
             this.RedoToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
@@ -255,7 +255,7 @@ namespace DBZ_LotSS_Editor
             // SelectAllToolStripMenuItem
             // 
             this.SelectAllToolStripMenuItem.Enabled = false;
-            this.SelectAllToolStripMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.select16;
+            this.SelectAllToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.select16;
             this.SelectAllToolStripMenuItem.Name = "SelectAllToolStripMenuItem";
             this.SelectAllToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
             this.SelectAllToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
@@ -265,7 +265,7 @@ namespace DBZ_LotSS_Editor
             // CutToolStripMenuItem
             // 
             this.CutToolStripMenuItem.Enabled = false;
-            this.CutToolStripMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.Cut;
+            this.CutToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.Cut;
             this.CutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.CutToolStripMenuItem.Name = "CutToolStripMenuItem";
             this.CutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
@@ -276,7 +276,7 @@ namespace DBZ_LotSS_Editor
             // CopyToolStripMenuItem
             // 
             this.CopyToolStripMenuItem.Enabled = false;
-            this.CopyToolStripMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.Copy;
+            this.CopyToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.Copy;
             this.CopyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.CopyToolStripMenuItem.Name = "CopyToolStripMenuItem";
             this.CopyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
@@ -287,7 +287,7 @@ namespace DBZ_LotSS_Editor
             // PasteToolStripMenuItem
             // 
             this.PasteToolStripMenuItem.Enabled = false;
-            this.PasteToolStripMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.Paste;
+            this.PasteToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.Paste;
             this.PasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.PasteToolStripMenuItem.Name = "PasteToolStripMenuItem";
             this.PasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
@@ -313,7 +313,7 @@ namespace DBZ_LotSS_Editor
             // 
             // DataToolStripMenuItem
             // 
-            this.DataToolStripMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.prepare32;
+            this.DataToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.prepare32;
             this.DataToolStripMenuItem.Name = "DataToolStripMenuItem";
             this.DataToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F7;
             this.DataToolStripMenuItem.Size = new System.Drawing.Size(259, 26);
@@ -322,7 +322,7 @@ namespace DBZ_LotSS_Editor
             // 
             // SpriteToolStripMenuItem
             // 
-            this.SpriteToolStripMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.image16;
+            this.SpriteToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.image16;
             this.SpriteToolStripMenuItem.Name = "SpriteToolStripMenuItem";
             this.SpriteToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F8;
             this.SpriteToolStripMenuItem.Size = new System.Drawing.Size(259, 26);
@@ -331,7 +331,7 @@ namespace DBZ_LotSS_Editor
             // 
             // PaletteToolStripMenuItem
             // 
-            this.PaletteToolStripMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.fontcolor16;
+            this.PaletteToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.fontcolor16;
             this.PaletteToolStripMenuItem.Name = "PaletteToolStripMenuItem";
             this.PaletteToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F9;
             this.PaletteToolStripMenuItem.Size = new System.Drawing.Size(259, 26);
@@ -340,7 +340,7 @@ namespace DBZ_LotSS_Editor
             // 
             // TextToolStripMenuItem
             // 
-            this.TextToolStripMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.orderedlist16;
+            this.TextToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.orderedlist16;
             this.TextToolStripMenuItem.Name = "TextToolStripMenuItem";
             this.TextToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F10;
             this.TextToolStripMenuItem.Size = new System.Drawing.Size(259, 26);
@@ -350,7 +350,7 @@ namespace DBZ_LotSS_Editor
             // AudioEditorToolStripMenuItem
             // 
             this.AudioEditorToolStripMenuItem.Enabled = false;
-            this.AudioEditorToolStripMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.Musical32;
+            this.AudioEditorToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.Musical32;
             this.AudioEditorToolStripMenuItem.Name = "AudioEditorToolStripMenuItem";
             this.AudioEditorToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F11;
             this.AudioEditorToolStripMenuItem.Size = new System.Drawing.Size(259, 26);
@@ -360,7 +360,7 @@ namespace DBZ_LotSS_Editor
             // EventEditorToolStripMenuItem
             // 
             this.EventEditorToolStripMenuItem.Enabled = false;
-            this.EventEditorToolStripMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.goto16;
+            this.EventEditorToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.goto16;
             this.EventEditorToolStripMenuItem.Name = "EventEditorToolStripMenuItem";
             this.EventEditorToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F12;
             this.EventEditorToolStripMenuItem.Size = new System.Drawing.Size(259, 26);
@@ -404,7 +404,7 @@ namespace DBZ_LotSS_Editor
             // 
             // FontToolStripMenuItem
             // 
-            this.FontToolStripMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.styleset16;
+            this.FontToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.styleset16;
             this.FontToolStripMenuItem.Name = "FontToolStripMenuItem";
             this.FontToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F3;
             this.FontToolStripMenuItem.Size = new System.Drawing.Size(313, 26);
@@ -413,7 +413,7 @@ namespace DBZ_LotSS_Editor
             // 
             // DataEditorMenuItem
             // 
-            this.DataEditorMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.multilevellist16;
+            this.DataEditorMenuItem.Image = global::DBZ_LotSS_Editor.Resources.multilevellist16;
             this.DataEditorMenuItem.Name = "DataEditorMenuItem";
             this.DataEditorMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F4;
             this.DataEditorMenuItem.Size = new System.Drawing.Size(313, 26);
@@ -422,7 +422,7 @@ namespace DBZ_LotSS_Editor
             // 
             // GraphicsEditorMenuItem
             // 
-            this.GraphicsEditorMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.image16;
+            this.GraphicsEditorMenuItem.Image = global::DBZ_LotSS_Editor.Resources.image16;
             this.GraphicsEditorMenuItem.Name = "GraphicsEditorMenuItem";
             this.GraphicsEditorMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5;
             this.GraphicsEditorMenuItem.Size = new System.Drawing.Size(313, 26);
@@ -431,7 +431,7 @@ namespace DBZ_LotSS_Editor
             // 
             // HistoryViewerMenuItem
             // 
-            this.HistoryViewerMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.printpreview32;
+            this.HistoryViewerMenuItem.Image = global::DBZ_LotSS_Editor.Resources.printpreview32;
             this.HistoryViewerMenuItem.Name = "HistoryViewerMenuItem";
             this.HistoryViewerMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F6;
             this.HistoryViewerMenuItem.Size = new System.Drawing.Size(313, 26);
@@ -446,7 +446,7 @@ namespace DBZ_LotSS_Editor
             // OpenFileFolderToolStripMenuItem
             // 
             this.OpenFileFolderToolStripMenuItem.Enabled = false;
-            this.OpenFileFolderToolStripMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.publish32;
+            this.OpenFileFolderToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.publish32;
             this.OpenFileFolderToolStripMenuItem.Name = "OpenFileFolderToolStripMenuItem";
             this.OpenFileFolderToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.O)));
             this.OpenFileFolderToolStripMenuItem.Size = new System.Drawing.Size(313, 26);
@@ -456,7 +456,7 @@ namespace DBZ_LotSS_Editor
             // OpenProjectFolderToolStripMenuItem
             // 
             this.OpenProjectFolderToolStripMenuItem.Enabled = false;
-            this.OpenProjectFolderToolStripMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.publish32;
+            this.OpenProjectFolderToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.publish32;
             this.OpenProjectFolderToolStripMenuItem.Name = "OpenProjectFolderToolStripMenuItem";
             this.OpenProjectFolderToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.O)));
@@ -474,7 +474,7 @@ namespace DBZ_LotSS_Editor
             // 
             // PreferencesToolStripMenuItem1
             // 
-            this.PreferencesToolStripMenuItem1.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.options16;
+            this.PreferencesToolStripMenuItem1.Image = global::DBZ_LotSS_Editor.Resources.options16;
             this.PreferencesToolStripMenuItem1.Name = "PreferencesToolStripMenuItem1";
             this.PreferencesToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
             this.PreferencesToolStripMenuItem1.Size = new System.Drawing.Size(218, 26);
@@ -491,7 +491,7 @@ namespace DBZ_LotSS_Editor
             // 
             // HelpAboutToolStripMenuItem
             // 
-            this.HelpAboutToolStripMenuItem.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.addons32;
+            this.HelpAboutToolStripMenuItem.Image = global::DBZ_LotSS_Editor.Resources.addons32;
             this.HelpAboutToolStripMenuItem.Name = "HelpAboutToolStripMenuItem";
             this.HelpAboutToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
             this.HelpAboutToolStripMenuItem.Size = new System.Drawing.Size(157, 26);
@@ -528,7 +528,7 @@ namespace DBZ_LotSS_Editor
             // ToolStripButtonData
             // 
             this.ToolStripButtonData.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.ToolStripButtonData.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.prepare32;
+            this.ToolStripButtonData.Image = global::DBZ_LotSS_Editor.Resources.prepare32;
             this.ToolStripButtonData.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ToolStripButtonData.Name = "ToolStripButtonData";
             this.ToolStripButtonData.Size = new System.Drawing.Size(29, 24);
@@ -540,7 +540,7 @@ namespace DBZ_LotSS_Editor
             // ToolStripButtonSprite
             // 
             this.ToolStripButtonSprite.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.ToolStripButtonSprite.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.image16;
+            this.ToolStripButtonSprite.Image = global::DBZ_LotSS_Editor.Resources.image16;
             this.ToolStripButtonSprite.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ToolStripButtonSprite.Name = "ToolStripButtonSprite";
             this.ToolStripButtonSprite.Size = new System.Drawing.Size(29, 24);
@@ -552,7 +552,7 @@ namespace DBZ_LotSS_Editor
             // ToolStripButtonPalette
             // 
             this.ToolStripButtonPalette.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.ToolStripButtonPalette.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.fontcolor16;
+            this.ToolStripButtonPalette.Image = global::DBZ_LotSS_Editor.Resources.fontcolor16;
             this.ToolStripButtonPalette.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ToolStripButtonPalette.Name = "ToolStripButtonPalette";
             this.ToolStripButtonPalette.Size = new System.Drawing.Size(29, 24);
@@ -564,7 +564,7 @@ namespace DBZ_LotSS_Editor
             // ToolStripButtonText
             // 
             this.ToolStripButtonText.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.ToolStripButtonText.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.orderedlist16;
+            this.ToolStripButtonText.Image = global::DBZ_LotSS_Editor.Resources.orderedlist16;
             this.ToolStripButtonText.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ToolStripButtonText.Name = "ToolStripButtonText";
             this.ToolStripButtonText.Size = new System.Drawing.Size(29, 24);

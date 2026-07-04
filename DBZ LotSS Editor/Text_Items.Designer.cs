@@ -47,11 +47,11 @@ namespace DBZ_LotSS_Editor
             // 
             this.BasicListBoxAssociate1.Controls.Add(this.HexPanel1);
             this.BasicListBoxAssociate1.ListBox = this.HexListBox1;
-            this.BasicListBoxAssociate1.Location = new System.Drawing.Point(382, 27);
-            this.BasicListBoxAssociate1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BasicListBoxAssociate1.Location = new System.Drawing.Point(257, 17);
+            this.BasicListBoxAssociate1.Margin = new System.Windows.Forms.Padding(4);
             this.BasicListBoxAssociate1.Name = "BasicListBoxAssociate1";
-            this.BasicListBoxAssociate1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.BasicListBoxAssociate1.Size = new System.Drawing.Size(777, 859);
+            this.BasicListBoxAssociate1.Padding = new System.Windows.Forms.Padding(4);
+            this.BasicListBoxAssociate1.Size = new System.Drawing.Size(497, 530);
             this.BasicListBoxAssociate1.TabIndex = 19;
             this.BasicListBoxAssociate1.TabStop = false;
             this.BasicListBoxAssociate1.Text = "HexListBox1";
@@ -63,11 +63,9 @@ namespace DBZ_LotSS_Editor
             | System.Windows.Forms.AnchorStyles.Right)));
             this.HexPanel1.Controls.Add(this._Text);
             this.HexPanel1.Definition = "TextEditor.Items";
-            this.HexPanel1.Location = new System.Drawing.Point(12, 56);
-            this.HexPanel1.Margin = new System.Windows.Forms.Padding(8);
+            this.HexPanel1.Location = new System.Drawing.Point(7, 28);
             this.HexPanel1.Name = "HexPanel1";
-            this.HexPanel1.Padding = new System.Windows.Forms.Padding(8);
-            this.HexPanel1.Size = new System.Drawing.Size(360, 64);
+            this.HexPanel1.Size = new System.Drawing.Size(482, 501);
             this.HexPanel1.TabIndex = 37;
             // 
             // _Text
@@ -94,18 +92,18 @@ namespace DBZ_LotSS_Editor
             this.HexListBox1.Margin = new System.Windows.Forms.Padding(6);
             this.HexListBox1.Name = "HexListBox1";
             this.HexListBox1.SelectedItem = null;
-            this.HexListBox1.Size = new System.Drawing.Size(346, 849);
+            this.HexListBox1.Size = new System.Drawing.Size(232, 480);
+            this.HexListBox1.CanEditLabel = true;
             this.HexListBox1.TabIndex = 18;
             // 
             // Text_Items
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.BasicListBoxAssociate1);
             this.Controls.Add(this.HexListBox1);
-            this.Margin = new System.Windows.Forms.Padding(6);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Text_Items";
-            this.Size = new System.Drawing.Size(1180, 942);
+            this.Size = new System.Drawing.Size(787, 603);
             this.BasicListBoxAssociate1.ResumeLayout(false);
             this.HexPanel1.ResumeLayout(false);
             this.HexPanel1.PerformLayout();

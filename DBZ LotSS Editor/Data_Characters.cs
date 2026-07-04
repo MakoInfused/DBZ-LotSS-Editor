@@ -9,7 +9,7 @@ namespace DBZ_LotSS_Editor
     public partial class Data_Characters : HexTools.HexUserControl
     {
         private static readonly CharacterDataDefinition DefaultCharacterDefinition =
-            new BasicTools.BasicJsonDefinition<CharacterDataDefinition>(My.Resources.Resources.DataEditor_Characters)
+            new BasicTools.BasicJsonDefinition<CharacterDataDefinition>(global::DBZ_LotSS_Editor.Resources.DataEditor_Characters)
                 .Definition;
 
         public Data_Characters()

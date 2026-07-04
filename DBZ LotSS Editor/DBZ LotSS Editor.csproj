@@ -70,7 +70,6 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualBasic" />
-    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System.Design" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="WindowsBase" />
@@ -106,6 +105,11 @@
     </Compile>
     <Compile Update="Palette_Flyers.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Update="Sprite_Flyers.cs">
       <SubType>UserControl</SubType>
@@ -272,5 +276,11 @@
 	  <AssemblyAttribute Include="System.Reflection.AssemblyTrademarkAttribute">
 	    <_Parameter1>MakoInfused / Dino Suvalic</_Parameter1>
 	  </AssemblyAttribute>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

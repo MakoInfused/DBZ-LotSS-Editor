@@ -35,7 +35,7 @@ namespace DBZ_LotSS_Editor
     {
         public SpriteSystemDefinitionAccessor(ISynchronizeInvoke synchronizingObject) : base(synchronizingObject) { }
 
-        public override byte[] DefaultDefinition => My.Resources.Resources.SpriteEditor_System;
+        public override byte[] DefaultDefinition => global::DBZ_LotSS_Editor.Resources.SpriteEditor_System;
 
         public override string DefinitionFileName => "SpriteEditor_System.json";
 
@@ -49,7 +49,7 @@ namespace DBZ_LotSS_Editor
     {
         public SpritePortraitDefinitionAccessor(ISynchronizeInvoke synchronizingObject) : base(synchronizingObject) { }
 
-        public override byte[] DefaultDefinition => My.Resources.Resources.SpriteEditor_Portraits;
+        public override byte[] DefaultDefinition => global::DBZ_LotSS_Editor.Resources.SpriteEditor_Portraits;
 
         public override string DefinitionFileName => "SpriteEditor_Portraits.json";
 
@@ -63,7 +63,7 @@ namespace DBZ_LotSS_Editor
     {
         public SpriteCharacterDefinitionAccessor(ISynchronizeInvoke synchronizingObject) : base(synchronizingObject) { }
 
-        public override byte[] DefaultDefinition => My.Resources.Resources.SpriteEditor_Characters;
+        public override byte[] DefaultDefinition => global::DBZ_LotSS_Editor.Resources.SpriteEditor_Characters;
 
         public override string DefinitionFileName => "SpriteEditor_Characters.json";
 
@@ -77,7 +77,7 @@ namespace DBZ_LotSS_Editor
     {
         public SpriteBattlerDefinitionAccessor(ISynchronizeInvoke synchronizingObject) : base(synchronizingObject) { }
 
-        public override byte[] DefaultDefinition => My.Resources.Resources.SpriteEditor_Battlers;
+        public override byte[] DefaultDefinition => global::DBZ_LotSS_Editor.Resources.SpriteEditor_Battlers;
 
         public override string DefinitionFileName => "SpriteEditor_Battlers.json";
 
@@ -91,7 +91,7 @@ namespace DBZ_LotSS_Editor
     {
         public SpriteFlyersDefinitionAccessor(ISynchronizeInvoke synchronizingObject) : base(synchronizingObject) { }
 
-        public override byte[] DefaultDefinition => My.Resources.Resources.SpriteEditor_Flyers;
+        public override byte[] DefaultDefinition => global::DBZ_LotSS_Editor.Resources.SpriteEditor_Flyers;
 
         public override string DefinitionFileName => "SpriteEditor_Flyers.json";
 
@@ -105,7 +105,7 @@ namespace DBZ_LotSS_Editor
     {
         public PaletteSystemDefinitionAccessor(ISynchronizeInvoke synchronizingObject) : base(synchronizingObject) { }
 
-        public override byte[] DefaultDefinition => My.Resources.Resources.PaletteEditor_System;
+        public override byte[] DefaultDefinition => global::DBZ_LotSS_Editor.Resources.PaletteEditor_System;
 
         public override string DefinitionFileName => "PaletteEditor_System.json";
 
@@ -119,7 +119,7 @@ namespace DBZ_LotSS_Editor
     {
         public PaletteCharacterDefinitionAccessor(ISynchronizeInvoke synchronizingObject) : base(synchronizingObject) { }
 
-        public override byte[] DefaultDefinition => My.Resources.Resources.PaletteEditor_Characters;
+        public override byte[] DefaultDefinition => global::DBZ_LotSS_Editor.Resources.PaletteEditor_Characters;
 
         public override string DefinitionFileName => "PaletteEditor_Characters.json";
 
@@ -133,7 +133,7 @@ namespace DBZ_LotSS_Editor
     {
         public PalettePortraitDefinitionAccessor(ISynchronizeInvoke synchronizingObject) : base(synchronizingObject) { }
 
-        public override byte[] DefaultDefinition => My.Resources.Resources.PaletteEditor_Portraits;
+        public override byte[] DefaultDefinition => global::DBZ_LotSS_Editor.Resources.PaletteEditor_Portraits;
 
         public override string DefinitionFileName => "PaletteEditor_Portraits.json";
 
@@ -147,7 +147,7 @@ namespace DBZ_LotSS_Editor
     {
         public PaletteBattlerDefinitionAccessor(ISynchronizeInvoke synchronizingObject) : base(synchronizingObject) { }
 
-        public override byte[] DefaultDefinition => My.Resources.Resources.PaletteEditor_Battlers;
+        public override byte[] DefaultDefinition => global::DBZ_LotSS_Editor.Resources.PaletteEditor_Battlers;
 
         public override string DefinitionFileName => "PaletteEditor_Battlers.json";
 
@@ -161,7 +161,7 @@ namespace DBZ_LotSS_Editor
     {
         public PaletteFlyerDefinitionAccessor(ISynchronizeInvoke synchronizingObject) : base(synchronizingObject) { }
 
-        public override byte[] DefaultDefinition => My.Resources.Resources.PaletteEditor_Flyers;
+        public override byte[] DefaultDefinition => global::DBZ_LotSS_Editor.Resources.PaletteEditor_Flyers;
 
         public override string DefinitionFileName => "PaletteEditor_Flyers.json";
 
@@ -175,7 +175,7 @@ namespace DBZ_LotSS_Editor
     {
         public DataCharacterDefinitionAccessor(ISynchronizeInvoke synchronizingObject) : base(synchronizingObject) { }
 
-        public override byte[] DefaultDefinition => My.Resources.Resources.DataEditor_Characters;
+        public override byte[] DefaultDefinition => global::DBZ_LotSS_Editor.Resources.DataEditor_Characters;
 
         public override string DefinitionFileName => "DataEditor_Characters.json";
 
@@ -189,7 +189,7 @@ namespace DBZ_LotSS_Editor
     {
         public TextCharacterDefinitionAccessor(ISynchronizeInvoke synchronizingObject) : base(synchronizingObject) { }
 
-        public override byte[] DefaultDefinition => My.Resources.Resources.TextEditor_Characters;
+        public override byte[] DefaultDefinition => global::DBZ_LotSS_Editor.Resources.TextEditor_Characters;
 
         public override string DefinitionFileName => "TextEditor_Characters.json";
 
@@ -203,7 +203,7 @@ namespace DBZ_LotSS_Editor
     {
         public TextBattlerDefinitionAccessor(ISynchronizeInvoke synchronizingObject) : base(synchronizingObject) { }
 
-        public override byte[] DefaultDefinition => My.Resources.Resources.TextEditor_Battlers;
+        public override byte[] DefaultDefinition => global::DBZ_LotSS_Editor.Resources.TextEditor_Battlers;
 
         public override string DefinitionFileName => "TextEditor_Battlers.json";
 
@@ -217,7 +217,7 @@ namespace DBZ_LotSS_Editor
     {
         public TextSkillDefinitionAccessor(ISynchronizeInvoke synchronizingObject) : base(synchronizingObject) { }
 
-        public override byte[] DefaultDefinition => My.Resources.Resources.TextEditor_Skills;
+        public override byte[] DefaultDefinition => global::DBZ_LotSS_Editor.Resources.TextEditor_Skills;
 
         public override string DefinitionFileName => "TextEditor_Skills.json";
 
@@ -231,7 +231,7 @@ namespace DBZ_LotSS_Editor
     {
         public TextItemDefinitionAccessor(ISynchronizeInvoke synchronizingObject) : base(synchronizingObject) { }
 
-        public override byte[] DefaultDefinition => My.Resources.Resources.TextEditor_Items;
+        public override byte[] DefaultDefinition => global::DBZ_LotSS_Editor.Resources.TextEditor_Items;
 
         public override string DefinitionFileName => "TextEditor_Items.json";
 
@@ -245,7 +245,7 @@ namespace DBZ_LotSS_Editor
     {
         public TextDialogueDefinitionAccessor(ISynchronizeInvoke synchronizingObject) : base(synchronizingObject) { }
 
-        public override byte[] DefaultDefinition => My.Resources.Resources.TextEditor_Dialogues;
+        public override byte[] DefaultDefinition => global::DBZ_LotSS_Editor.Resources.TextEditor_Dialogues;
 
         public override string DefinitionFileName => "TextEditor_Dialogues.json";
 
@@ -259,7 +259,7 @@ namespace DBZ_LotSS_Editor
     {
         public TextDescriptionDefinitionAccessor(ISynchronizeInvoke synchronizingObject) : base(synchronizingObject) { }
 
-        public override byte[] DefaultDefinition => My.Resources.Resources.TextEditor_Descriptions;
+        public override byte[] DefaultDefinition => global::DBZ_LotSS_Editor.Resources.TextEditor_Descriptions;
 
         public override string DefinitionFileName => "TextEditor_Descriptions.json";
 

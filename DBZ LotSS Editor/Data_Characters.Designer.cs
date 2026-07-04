@@ -282,7 +282,7 @@ namespace DBZ_LotSS_Editor
             // 
             // ExportLevelData
             // 
-            this.ExportLevelData.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.Export;
+            this.ExportLevelData.Image = global::DBZ_LotSS_Editor.Resources.Export;
             this.ExportLevelData.Location = new System.Drawing.Point(603, 0);
             this.ExportLevelData.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ExportLevelData.Name = "ExportLevelData";

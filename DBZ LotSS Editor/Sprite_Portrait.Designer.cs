@@ -432,7 +432,7 @@ namespace DBZ_LotSS_Editor
             // ExportButton2
             // 
             this.ExportButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ExportButton2.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.Export;
+            this.ExportButton2.Image = global::DBZ_LotSS_Editor.Resources.Export;
             this.ExportButton2.Location = new System.Drawing.Point(198, 118);
             this.ExportButton2.Name = "ExportButton2";
             this.ExportButton2.Size = new System.Drawing.Size(32, 32);
@@ -443,7 +443,7 @@ namespace DBZ_LotSS_Editor
             // ImportButton2
             // 
             this.ImportButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ImportButton2.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.Import;
+            this.ImportButton2.Image = global::DBZ_LotSS_Editor.Resources.Import;
             this.ImportButton2.Location = new System.Drawing.Point(198, 80);
             this.ImportButton2.Name = "ImportButton2";
             this.ImportButton2.Size = new System.Drawing.Size(32, 32);
@@ -467,7 +467,7 @@ namespace DBZ_LotSS_Editor
             // ExportButton1
             // 
             this.ExportButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ExportButton1.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.Export;
+            this.ExportButton1.Image = global::DBZ_LotSS_Editor.Resources.Export;
             this.ExportButton1.Location = new System.Drawing.Point(198, 118);
             this.ExportButton1.Name = "ExportButton1";
             this.ExportButton1.Size = new System.Drawing.Size(32, 32);
@@ -478,7 +478,7 @@ namespace DBZ_LotSS_Editor
             // ImportButton1
             // 
             this.ImportButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ImportButton1.Image = global::DBZ_LotSS_Editor.My.Resources.Resources.Import;
+            this.ImportButton1.Image = global::DBZ_LotSS_Editor.Resources.Import;
             this.ImportButton1.Location = new System.Drawing.Point(198, 80);
             this.ImportButton1.Name = "ImportButton1";
             this.ImportButton1.Size = new System.Drawing.Size(32, 32);
@@ -826,7 +826,7 @@ namespace DBZ_LotSS_Editor
             this.HexListBox1.Margin = new System.Windows.Forms.Padding(4);
             this.HexListBox1.Name = "HexListBox1";
             this.HexListBox1.SelectedItem = null;
-            this.HexListBox1.Size = new System.Drawing.Size(232, 550);
+            this.HexListBox1.Size = new System.Drawing.Size(232, 480);
             this.HexListBox1.TabIndex = 14;
             // 
             // Sprite_Portrait

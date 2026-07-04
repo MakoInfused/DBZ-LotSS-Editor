@@ -135,7 +135,7 @@ namespace DBZ_LotSS_Editor
             // 
             // ButtonReset
             // 
-            ButtonReset.Image = My.Resources.Resources.undo16;
+            ButtonReset.Image = global::DBZ_LotSS_Editor.Resources.undo16;
             ButtonReset.Location = new Point(87, 3);
             ButtonReset.Name = "ButtonReset";
             ButtonReset.Size = new Size(36, 36);
@@ -175,7 +175,7 @@ namespace DBZ_LotSS_Editor
             // 
             // ButtonSave
             // 
-            ButtonSave.Image = My.Resources.Resources.Save;
+            ButtonSave.Image = global::DBZ_LotSS_Editor.Resources.Save;
             ButtonSave.Location = new Point(45, 3);
             ButtonSave.Name = "ButtonSave";
             ButtonSave.Size = new Size(36, 36);
