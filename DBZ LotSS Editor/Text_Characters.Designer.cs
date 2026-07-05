@@ -35,7 +35,7 @@ namespace DBZ_LotSS_Editor
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.BasicListBoxAssociate1 = new BasicTools.BasicControls.BasicListBoxAssociate();
+            this.BasicListBoxAssociate1 = new HexTools.HexListBoxAssociate();
             this.HexPanel1 = new HexTools.HexPanel();
             this._Text = new HexTools.HexTextBox();
             this.HexListBox1 = new HexTools.HexListBox();
@@ -46,6 +46,7 @@ namespace DBZ_LotSS_Editor
             // BasicListBoxAssociate1
             // 
             this.BasicListBoxAssociate1.Controls.Add(this.HexPanel1);
+            this.BasicListBoxAssociate1.FormatAddress = "X4";
             this.BasicListBoxAssociate1.ListBox = this.HexListBox1;
             this.BasicListBoxAssociate1.Location = new System.Drawing.Point(257, 17);
             this.BasicListBoxAssociate1.Margin = new System.Windows.Forms.Padding(4);
@@ -111,7 +112,7 @@ namespace DBZ_LotSS_Editor
 
         }
 
-        internal BasicTools.BasicControls.BasicListBoxAssociate BasicListBoxAssociate1;
+        internal HexTools.HexListBoxAssociate BasicListBoxAssociate1;
         internal HexTools.HexPanel HexPanel1;
         internal HexTools.HexTextBox _Text;
         internal HexTools.HexListBox HexListBox1;

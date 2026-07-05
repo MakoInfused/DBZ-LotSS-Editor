@@ -34,7 +34,7 @@ namespace DBZ_LotSS_Editor
         [DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            this.BasicListBoxAssociate1 = new BasicTools.BasicControls.BasicListBoxAssociate();
+            this.BasicListBoxAssociate1 = new HexTools.HexListBoxAssociate();
             this.MessageBox = new HexTools.HexMessageBox();
             this.HexListBox1 = new HexTools.HexListBox();
             this.BasicListBoxAssociate1.SuspendLayout();
@@ -43,6 +43,7 @@ namespace DBZ_LotSS_Editor
             // BasicListBoxAssociate1
             // 
             this.BasicListBoxAssociate1.Controls.Add(this.MessageBox);
+            this.BasicListBoxAssociate1.FormatAddress = "X4";
             this.BasicListBoxAssociate1.ListBox = this.HexListBox1;
             this.BasicListBoxAssociate1.Location = new System.Drawing.Point(257, 17);
             this.BasicListBoxAssociate1.Margin = new System.Windows.Forms.Padding(4);
@@ -56,7 +57,7 @@ namespace DBZ_LotSS_Editor
             // MessageBox
             // 
             this.MessageBox.AutoSize = true;
-            this.MessageBox.Location = new System.Drawing.Point(9, 3);
+            this.MessageBox.Location = new System.Drawing.Point(9, 33);
             this.MessageBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MessageBox.MessageDefinition = "TextEditor.Dialogues";
             this.MessageBox.MinimumSize = new System.Drawing.Size(375, 195);
@@ -94,7 +95,7 @@ namespace DBZ_LotSS_Editor
 
         }
 
-        internal BasicTools.BasicControls.BasicListBoxAssociate BasicListBoxAssociate1;
+        internal HexTools.HexListBoxAssociate BasicListBoxAssociate1;
         internal HexTools.HexListBox HexListBox1;
         internal HexTools.HexMessageBox MessageBox;
     }

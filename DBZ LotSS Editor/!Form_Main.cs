@@ -413,7 +413,7 @@ namespace DBZ_LotSS_Editor
                 }
             }
             Properties.Settings.Default.ActiveMDI = GetCurrentMdiChildIndex();
-            if(Properties.Settings.Default.ActiveMDI > 0)
+            if(Properties.Settings.Default.ActiveMDI >= 0)
             {
                 Properties.Settings.Default.ActiveSubModule = GetCurrentSubModuleIndex();
             }

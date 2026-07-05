@@ -34,9 +34,9 @@
 	<Product>DragonBall Z: Legend of the Super Saiyan Editor</Product>
 	<Copyright>Copyright © 2014 by Cetra Games</Copyright>
 	<!-- Versioning -->
-	<Version>0.79.0</Version>
-	<AssemblyVersion>0.79.0</AssemblyVersion>
-	<FileVersion>0.79.0</FileVersion>
+	<Version>0.79.1</Version>
+	<AssemblyVersion>0.79.1</AssemblyVersion>
+	<FileVersion>0.79.1</FileVersion>
 	<!-- COM and Interop Settings -->
 	<ComVisible>false</ComVisible>
 	<Guid>ecd18392-9589-413a-8747-aa12ee3f6924</Guid>
